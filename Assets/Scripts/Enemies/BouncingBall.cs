@@ -1,0 +1,80 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class BouncingBall : MonoBehaviour
+{
+    bool _enabled;
+    public bool enabled {get {return _enabled;} set  {_enabled = value;} }
+    [SerializeField] float point1, point2;
+    [SerializeField] float waitTime=1f;
+    [SerializeField] float vel;
+    Rigidbody2D rb;
+    float waitTimeSave;
+    float dir1, dir2;
+    bool patrol=true;
+
+    void Start()
+    {
+        waitTimeSave = waitTime;
+        rb = GetComponent<Rigidbody2D>();
+    }
+    void Update()
+    {
+        ControlPatrol();
+    }
+
+    void ControlPatrol()
+    {
+        if(patrol) 
+        {
+            Patrol1();
+        }
+        else 
+        {
+            Patrol2();
+        }
+    }
+    
+    void Patrol1()
+    {
+        dir1 = Mathf.Clamp((point1-transform.position.y),-1f,1f);
+        Vector2 moveVel = rb.velocity;
+        moveVel.y = dir1 * vel;
+        rb.velocity = moveVel;
+        if(Mathf.Abs(point1-transform.position.y) <= 0.4)
+        {
+            rb.velocity = new Vector2(0f,0f);
+            if(waitTime<=0)
+            {
+                waitTime=waitTimeSave;
+                patrol=false;
+            } 
+            else 
+            {
+                waitTime -= Time.deltaTime;
+            }
+        }
+    }
+
+    void Patrol2()
+    {
+        dir2 = Mathf.Clamp((point2-transform.position.y),-1f,1f);
+        Vector2 moveVel = rb.velocity;
+        moveVel.y = dir2 * vel;
+        rb.velocity = moveVel;
+        if(Mathf.Abs(point2-transform.position.y) <= 0.4)
+        {
+            rb.velocity = new Vector2(0f,0f);
+            if(waitTime<=0)
+            {
+                waitTime=waitTimeSave;
+                patrol=true;
+            } 
+            else 
+            {
+                waitTime -= Time.deltaTime;
+            }
+        }
+    }
+}
