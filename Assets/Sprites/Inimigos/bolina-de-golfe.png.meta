@@ -1,0 +1,424 @@
+fileFormatVersion: 2
+guid: 66f7c99c69609cb4fa83c117bf5d342e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 990669826453819537
+    second: bolina-de-golfe_0
+  - first:
+      213: -4265989137542078177
+    second: bolina-de-golfe_1
+  - first:
+      213: 3188957517751508536
+    second: bolina-de-golfe_2
+  - first:
+      213: 1091850384776153673
+    second: bolina-de-golfe_3
+  - first:
+      213: -2247406847024907344
+    second: bolina-de-golfe_4
+  - first:
+      213: 1203159797017008204
+    second: bolina-de-golfe_5
+  - first:
+      213: -3640496443524136229
+    second: bolina-de-golfe_6
+  - first:
+      213: -3826758341321923545
+    second: bolina-de-golfe_7
+  - first:
+      213: -6016728424527694244
+    second: bolina-de-golfe_8
+  - first:
+      213: 4742085622934329968
+    second: bolina-de-golfe_9
+  - first:
+      213: 7640998320090566527
+    second: bolina-de-golfe_10
+  - first:
+      213: -4033217825119368602
+    second: bolina-de-golfe_11
+  - first:
+      213: -1897392540723870178
+    second: bolina-de-golfe_12
+  - first:
+      213: 3373385248395241958
+    second: bolina-de-golfe_13
+  - first:
+      213: -2277358386638575603
+    second: bolina-de-golfe_14
+  - first:
+      213: 2812168729791382292
+    second: bolina-de-golfe_15
+  - first:
+      213: 5149462949834130228
+    second: bolina-de-golfe_16
+  - first:
+      213: -912724463777675525
+    second: bolina-de-golfe_17
+  - first:
+      213: -4190766565219311196
+    second: bolina-de-golfe_18
+  - first:
+      213: -8024154315014593970
+    second: bolina-de-golfe_19
+  - first:
+      213: 3794839220878506923
+    second: bolina-de-golfe_20
+  - first:
+      213: -4423472586215417694
+    second: bolina-de-golfe_21
+  - first:
+      213: 7391983925141470980
+    second: bolina-de-golfe_22
+  - first:
+      213: -4776845487064629729
+    second: bolina-de-golfe_0
+  - first:
+      213: 2506997086116465444
+    second: bolina-de-golfe_1
+  - first:
+      213: 6994017951439544516
+    second: bolina-de-golfe_2
+  - first:
+      213: -1080018580790055496
+    second: bolina-de-golfe_3
+  - first:
+      213: 620590639270430554
+    second: bolina-de-golfe_4
+  - first:
+      213: -896391092806505522
+    second: bolina-de-golfe_5
+  - first:
+      213: -4898549450995904520
+    second: bolina-de-golfe_6
+  - first:
+      213: -8298726980354151682
+    second: bolina-de-golfe_7
+  - first:
+      213: 7684294649804160565
+    second: bolina-de-golfe_8
+  - first:
+      213: -1303108426839411085
+    second: bolina-de-golfe_9
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: bolina-de-golfe_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 337
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1eb59c965c35bdb0800000000000000
+      internalID: -4776845487064629729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bolina-de-golfe_1
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 0
+        width: 337
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42b49e23194aac220800000000000000
+      internalID: 2506997086116465444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bolina-de-golfe_2
+      rect:
+        serializedVersion: 2
+        x: 674
+        y: 0
+        width: 337
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c0624c554ebf0160800000000000000
+      internalID: 6994017951439544516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bolina-de-golfe_3
+      rect:
+        serializedVersion: 2
+        x: 1011
+        y: 0
+        width: 337
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bdef2da2d00301f0800000000000000
+      internalID: -1080018580790055496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bolina-de-golfe_4
+      rect:
+        serializedVersion: 2
+        x: 1348
+        y: 0
+        width: 337
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5785acf5e7cc9800800000000000000
+      internalID: 620590639270430554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bolina-de-golfe_5
+      rect:
+        serializedVersion: 2
+        x: 1685
+        y: 0
+        width: 337
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecba175ec016f83f0800000000000000
+      internalID: -896391092806505522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bolina-de-golfe_6
+      rect:
+        serializedVersion: 2
+        x: 2022
+        y: 0
+        width: 337
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ff44ba5a3bd40cb0800000000000000
+      internalID: -4898549450995904520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bolina-de-golfe_7
+      rect:
+        serializedVersion: 2
+        x: 2359
+        y: 0
+        width: 337
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efa6a08a7cff4dc80800000000000000
+      internalID: -8298726980354151682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bolina-de-golfe_8
+      rect:
+        serializedVersion: 2
+        x: 2696
+        y: 0
+        width: 337
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53ef207554914aa60800000000000000
+      internalID: 7684294649804160565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bolina-de-golfe_9
+      rect:
+        serializedVersion: 2
+        x: 3033
+        y: 0
+        width: 337
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3763b6a3acd6aede0800000000000000
+      internalID: -1303108426839411085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
