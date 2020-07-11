@@ -8,4 +8,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Brenu.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: cac04aaa983978d44ac3d224d890ead5
+  - enabled: 1
+    path: Assets/Scenes/Wel.unity
+    guid: 2fa18192d8eaa034cae8c6e1676d63c8
   m_configObjects: {}
