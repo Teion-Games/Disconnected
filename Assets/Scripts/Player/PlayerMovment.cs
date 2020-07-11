@@ -23,6 +23,7 @@ public class PlayerMovment : MonoBehaviour
     Transform tagGround;
     [SerializeField] private LayerMask playerMask;
     bool _isJumping, _isGround;
+    bool facingRight=true;
     
     void Start()
     {
@@ -71,6 +72,13 @@ public class PlayerMovment : MonoBehaviour
         Vector2 moveVel = playerScript.playerRB.velocity;
         moveVel.x = dir * vel;
         playerScript.playerRB.velocity = moveVel;
+        if(dir < 0 && facingRight)
+        {
+            Flip();
+        } else if (dir>0 && !facingRight)
+        {
+            Flip();
+        }
     }
 
     void Jump()
@@ -81,5 +89,11 @@ public class PlayerMovment : MonoBehaviour
 			jumpPressedRemember = 0;
 			playerScript.playerRB.velocity = new Vector2(playerScript.playerRB.velocity.x, jumpVel);
 		}
+    }
+
+    void Flip()
+    {
+        facingRight = !facingRight;
+        transform.Rotate(0f, 180f, 0f);
     }
 }

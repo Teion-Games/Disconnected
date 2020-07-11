@@ -1,11 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
     int _currentController;
     Rigidbody2D _playerRB;
+    private GameMaster gm;
 
     public Rigidbody2D playerRB {get {return _playerRB; }  set { _playerRB = value; } }
     public int currentController {get {return _currentController;} set  {_currentController = value;} }
@@ -13,11 +15,16 @@ public class Player : MonoBehaviour
     {
         _playerRB = GetComponent<Rigidbody2D>();
         _currentController = 1;
+        gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameMaster>();
+		transform.position = gm._lastCheckPointPos;
     }
 
-    // Update is called once per frame
-    void Update()
+    void OnCollisionEnter2D (Collision2D other)
     {
-        
+        if(other.gameObject.tag=="Enemy")
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            gm.CheckReset();
+        }
     }
 }
