@@ -193,7 +193,7 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
                     ""name"": ""1D Axis"",
                     ""id"": ""0b59c1bc-1b9b-4461-bf52-30eb520b3a96"",
                     ""path"": ""1DAxis"",
-                    ""interactions"": """",
+                    ""interactions"": ""Tap(duration=0.5)"",
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""JumpFall2"",
