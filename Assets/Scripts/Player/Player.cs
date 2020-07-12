@@ -13,7 +13,7 @@ public class Player : MonoBehaviour
     public int currentController { get { return _currentController; } set { _currentController = value; } }
     void Start()
     {
-        AudioManager.instance.PlaySound("Main");
+        Invoke("StartAudio", 0, 1f);
         _playerRB = GetComponent<Rigidbody2D>();
         _currentController = 1;
         gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameMaster>();
@@ -40,6 +40,10 @@ public class Player : MonoBehaviour
         }
     }
 
+    void StartAudio()
+    {
+        AudioManager.instance.PlaySound("Main");
+    }
     void ResetScene()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
