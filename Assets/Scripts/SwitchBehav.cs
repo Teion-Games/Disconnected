@@ -49,6 +49,11 @@ public class SwitchBehav : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        bolas = gm.bolas;
+        enGround = gm.enGround;
+        enFly = gm.enFly;
+        colGround = gm.colGround;
         if (wichColor == 1)
         {
             foreach (BouncingBall balls in bolas)
@@ -85,10 +90,7 @@ public class SwitchBehav : MonoBehaviour
                 }
             }
         }
-        bolas = gm.bolas;
-        enGround = gm.enGround;
-        enFly = gm.enFly;
-        colGround = gm.colGround;
+        
         if (canInteract && input.inputActions.PlayerControls.Interact.triggered)
         {
             AudioManager.instance.PlaySound("Activate");

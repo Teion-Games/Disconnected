@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 602489886112778523}
   - component: {fileID: 930680090368650601}
   - component: {fileID: 1337170710922795702}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Checkpoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,6 +95,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9240135c29e09ad4ebbeb07eb485f090, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isDestroy: 0
+  isFirst: 0
 --- !u!58 &1337170710922795702
 CircleCollider2D:
   m_ObjectHideFlags: 0

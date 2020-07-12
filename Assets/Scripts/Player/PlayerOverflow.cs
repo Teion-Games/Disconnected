@@ -19,7 +19,7 @@ public class PlayerOverflow : MonoBehaviour
     void Start()
     {
         input = GetComponent<PlayerInput>();
-        _canOverflow = true;
+        _canOverflow = false;
         playerScript = GetComponent<Player>();
     }
 

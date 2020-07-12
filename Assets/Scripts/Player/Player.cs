@@ -13,7 +13,7 @@ public class Player : MonoBehaviour
     public int currentController { get { return _currentController; } set { _currentController = value; } }
     void Start()
     {
-        Invoke("StartAudio", 0, 1f);
+        Invoke("StartAudio", 0.1f);
         _playerRB = GetComponent<Rigidbody2D>();
         _currentController = 1;
         gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameMaster>();
