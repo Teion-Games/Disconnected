@@ -49,6 +49,42 @@ public class SwitchBehav : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (wichColor == 1)
+        {
+            foreach (BouncingBall balls in bolas)
+            {
+                if (balls.gameObject.layer == 9)
+                {
+                    if (balls.isEnabled)
+                    {
+                        GetComponent<SpriteRenderer>().color = colorOn;
+                    }
+                    else
+                    {
+                        GetComponent<SpriteRenderer>().color = colorOff;
+                    }
+                    break;
+                }
+            }
+        }
+        else if (wichColor == 2)
+        {
+            foreach (BouncingBall balls in bolas)
+            {
+                if (balls.gameObject.layer == 10)
+                {
+                    if (balls.isEnabled)
+                    {
+                        GetComponent<SpriteRenderer>().color = color2On;
+                    }
+                    else
+                    {
+                        GetComponent<SpriteRenderer>().color = color2Off;
+                    }
+                    break;
+                }
+            }
+        }
         bolas = gm.bolas;
         enGround = gm.enGround;
         enFly = gm.enFly;
@@ -69,6 +105,7 @@ public class SwitchBehav : MonoBehaviour
                 if (balls.gameObject.layer == 9)
                 {
                     balls.isEnabled = !balls.isEnabled;
+
                     if (balls.isEnabled)
                     {
                         balls.gameObject.GetComponent<SpriteRenderer>().color = colorOn;
