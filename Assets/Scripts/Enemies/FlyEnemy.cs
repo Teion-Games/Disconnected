@@ -11,6 +11,7 @@ public class FlyEnemy : MonoBehaviour
     [SerializeField] int vida;
     int shotCounter = 0;
     Animator anim;
+    bool facingRight = true;
     void Start()
     {
         anim = GetComponent<Animator>();
@@ -26,8 +27,17 @@ public class FlyEnemy : MonoBehaviour
         anim.enabled = isEnabled;
         if (isEnabled)
         {
-            rb.velocity = fly.rb.velocity;
             fly.isEnabled = true;
+            rb.velocity = fly.rb.velocity;
+            if (rb.velocity.x < 0 && facingRight)
+            {
+                Flip();
+            }
+            else if (rb.velocity.x > 0 && !facingRight)
+            {
+                Flip();
+            }
+
         }
         else
         {
@@ -48,5 +58,10 @@ public class FlyEnemy : MonoBehaviour
                 //playdeathparticles
             }
         }
+    }
+    void Flip()
+    {
+        facingRight = !facingRight;
+        transform.Rotate(0f, 180f, 0f);
     }
 }
