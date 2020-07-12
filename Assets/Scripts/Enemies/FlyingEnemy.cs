@@ -10,17 +10,15 @@ public class FlyingEnemy : MonoBehaviour
     int vTarget;
     bool reverse;
     public bool isEnabled;
-    Animator anim;
+
     void Start()
     {
-        anim = GetComponent<Animator>();
         vTarget = 0;
         rb = GetComponent<Rigidbody2D>();
     }
 
     void FixedUpdate()
     {
-        anim.enabled = isEnabled;
         if (isEnabled)
         {
             Vector2 dir = (Vector2)target[vTarget].position - rb.position;

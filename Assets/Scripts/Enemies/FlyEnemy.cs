@@ -8,8 +8,12 @@ public class FlyEnemy : MonoBehaviour
     FlyingEnemy fly;
     Rigidbody2D rb;
     public bool isEnabled;
+    [SerializeField] int vida;
+    int shotCounter = 0;
+    Animator anim;
     void Start()
     {
+        anim = GetComponent<Animator>();
         col = GetComponent<Collider2D>();
         fly = GetComponentInChildren<FlyingEnemy>();
         rb = GetComponent<Rigidbody2D>();
@@ -19,6 +23,7 @@ public class FlyEnemy : MonoBehaviour
     void Update()
     {
         col.enabled = isEnabled;
+        anim.enabled = isEnabled;
         if (isEnabled)
         {
             rb.velocity = fly.rb.velocity;
@@ -35,7 +40,13 @@ public class FlyEnemy : MonoBehaviour
     {
         if (other.gameObject.tag == "Bullet")
         {
-            gameObject.SetActive(false);
+            Destroy(other.gameObject);
+            shotCounter++;
+            if (shotCounter == vida)
+            {
+                gameObject.SetActive(false);
+                //playdeathparticles
+            }
         }
     }
 }

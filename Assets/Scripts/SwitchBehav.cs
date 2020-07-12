@@ -24,11 +24,8 @@ public class SwitchBehav : MonoBehaviour
         colorOff = gm.color1Off;
         color2On = gm.color2On;
         color2Off = gm.color2Off;
-        bolas = gm.bolas;
-        enGround = gm.enGround;
-        enFly = gm.enFly;
-        colGround = gm.colGround;
     }
+
 
     void OnTriggerStay2D(Collider2D other)
     {
@@ -51,6 +48,10 @@ public class SwitchBehav : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        bolas = gm.bolas;
+        enGround = gm.enGround;
+        enFly = gm.enFly;
+        colGround = gm.colGround;
         if (canInteract && input.inputActions.PlayerControls.Interact.triggered)
         {
             SwitchColors();
