@@ -8,7 +8,7 @@ public class HudController : MonoBehaviour
 {
     [SerializeField] GameObject moveText;
     [SerializeField] TMP_Text upText, downText, leftText, rightText;
-    [SerializeField] GameObject[] rightFields, upFields, downFields, leftFields;
+    [SerializeField] GameObject[] rightFields, upFields, downFields, leftFields, spaceFields;
     [SerializeField] GameObject overflowObj;
 
     PlayerOverflow overflow;
@@ -30,40 +30,40 @@ public class HudController : MonoBehaviour
         switch (playerScript.currentController)
         {
             case 1:
-            upText.text="↑";
-            downText.text="↓";
-            leftText.text="←";
-            rightText.text="→";
+                upText.text = "↑";
+                downText.text = "↓";
+                leftText.text = "←";
+                rightText.text = "→";
                 break;
             case 2:
-            upText.text="W";
-            downText.text="S";
-            leftText.text="A";
-            rightText.text="D";
+                upText.text = "W";
+                downText.text = "S";
+                leftText.text = "A";
+                rightText.text = "D";
                 break;
             case 3:
-            upText.text="T";
-            downText.text="G";
-            leftText.text="F";
-            rightText.text="H";
+                upText.text = "T";
+                downText.text = "G";
+                leftText.text = "F";
+                rightText.text = "H";
                 break;
             case 4:
-            upText.text="I";
-            downText.text="K";
-            leftText.text="J";
-            rightText.text="L";
+                upText.text = "I";
+                downText.text = "K";
+                leftText.text = "J";
+                rightText.text = "L";
                 break;
             case 5:
-            upText.text="S";
-            downText.text="X";
-            leftText.text="Z";
-            rightText.text="C";
+                upText.text = "S";
+                downText.text = "X";
+                leftText.text = "Z";
+                rightText.text = "C";
                 break;
             case 6:
-            upText.text="H";
-            downText.text="N";
-            leftText.text="B";
-            rightText.text="M";
+                upText.text = "H";
+                downText.text = "N";
+                leftText.text = "B";
+                rightText.text = "M";
                 break;
         }
         switch (gm.controllerLevel)
@@ -81,6 +81,8 @@ public class HudController : MonoBehaviour
                 leftFields[0].GetComponent<SpriteRenderer>().color = offColor;
                 leftFields[1].GetComponent<TextMeshProUGUI>().color = offColor;
                 leftFields[2].GetComponent<TextMeshProUGUI>().color = offColor;
+                spaceFields[0].GetComponent<SpriteRenderer>().color = offColor;
+                spaceFields[1].GetComponent<TextMeshProUGUI>().color = offColor;
                 break;
             case 1:
                 upFields[0].GetComponent<SpriteRenderer>().color = onColor;
@@ -92,6 +94,8 @@ public class HudController : MonoBehaviour
                 leftFields[0].GetComponent<SpriteRenderer>().color = offColor;
                 leftFields[1].GetComponent<TextMeshProUGUI>().color = offColor;
                 leftFields[2].GetComponent<TextMeshProUGUI>().color = offColor;
+                spaceFields[0].GetComponent<SpriteRenderer>().color = offColor;
+                spaceFields[1].GetComponent<TextMeshProUGUI>().color = offColor;
                 break;
             case 2:
                 downFields[0].GetComponent<SpriteRenderer>().color = onColor;
@@ -100,11 +104,19 @@ public class HudController : MonoBehaviour
                 leftFields[0].GetComponent<SpriteRenderer>().color = offColor;
                 leftFields[1].GetComponent<TextMeshProUGUI>().color = offColor;
                 leftFields[2].GetComponent<TextMeshProUGUI>().color = offColor;
+                spaceFields[0].GetComponent<SpriteRenderer>().color = offColor;
+                spaceFields[1].GetComponent<TextMeshProUGUI>().color = offColor;
                 break;
             case 3:
                 leftFields[0].GetComponent<SpriteRenderer>().color = onColor;
                 leftFields[1].GetComponent<TextMeshProUGUI>().color = onColor;
                 leftFields[2].GetComponent<TextMeshProUGUI>().color = onColor;
+                spaceFields[0].GetComponent<SpriteRenderer>().color = offColor;
+                spaceFields[1].GetComponent<TextMeshProUGUI>().color = offColor;
+                break;
+            case 4:
+                spaceFields[0].GetComponent<SpriteRenderer>().color = onColor;
+                spaceFields[1].GetComponent<TextMeshProUGUI>().color = onColor;
                 break;
         }
         moveText.SetActive(gm.showText);
