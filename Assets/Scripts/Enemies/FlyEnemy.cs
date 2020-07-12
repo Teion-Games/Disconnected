@@ -35,7 +35,7 @@ public class FlyEnemy : MonoBehaviour
     {
         if (other.gameObject.tag == "Bullet")
         {
-            Destroy(gameObject);
+            gameObject.SetActive(false);
         }
     }
 }

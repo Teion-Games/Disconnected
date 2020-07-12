@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyGround : MonoBehaviour
+public class MovingPlataform : MonoBehaviour
 {
     bool _enabled;
     public bool enabled { get { return _enabled; } set { _enabled = value; } }
@@ -13,20 +13,17 @@ public class EnemyGround : MonoBehaviour
     float waitTimeSave;
     float dir1, dir2;
     bool patrol = true;
-    public bool isEnabled;
+    bool isEnabled;
     Collider2D col;
-    Animator anim;
     void Start()
     {
         col = GetComponent<Collider2D>();
         waitTimeSave = waitTime;
         rb = GetComponent<Rigidbody2D>();
-        anim = GetComponent<Animator>();
     }
-    void Update()
+    void FixedUpdate()
     {
-        anim.enabled = isEnabled;
-        rb.isKinematic = !isEnabled;
+        isEnabled = GetComponent<GroundColored>().isEnabled;
         col.enabled = isEnabled;
 
         if (isEnabled)
@@ -51,9 +48,7 @@ public class EnemyGround : MonoBehaviour
     void Patrol1()
     {
         dir1 = Mathf.Clamp((point1 - transform.position.x), -1f, 1f);
-        Vector2 moveVel = rb.velocity;
-        moveVel.x = dir1 * vel;
-        rb.velocity = moveVel;
+        GetComponent<Transform>().Translate(Vector3.right * vel * dir1 * Time.deltaTime);
         if (Mathf.Abs(point1 - transform.position.x) <= 0.4)
         {
             rb.velocity = new Vector2(0f, 0f);
@@ -72,9 +67,7 @@ public class EnemyGround : MonoBehaviour
     void Patrol2()
     {
         dir2 = Mathf.Clamp((point2 - transform.position.x), -1f, 1f);
-        Vector2 moveVel = rb.velocity;
-        moveVel.x = dir2 * vel;
-        rb.velocity = moveVel;
+        GetComponent<Transform>().Translate(Vector3.right * vel * dir2 * Time.deltaTime);
         if (Mathf.Abs(point2 - transform.position.x) <= 0.4)
         {
             rb.velocity = new Vector2(0f, 0f);
@@ -90,12 +83,19 @@ public class EnemyGround : MonoBehaviour
         }
     }
 
-
-    void OnTriggerEnter2D(Collider2D other)
+    void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.gameObject.tag == "Bullet")
+        if (other.gameObject.tag == "Player")
         {
-            gameObject.SetActive(false);
+            other.collider.transform.SetParent(transform);
+        }
+    }
+
+    void OnCollisionExit2D(Collision2D other)
+    {
+        if (other.gameObject.tag == "Player")
+        {
+            other.collider.transform.SetParent(null);
         }
     }
 }
