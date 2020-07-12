@@ -12,6 +12,11 @@ public class EnableButtons : MonoBehaviour
     }
     void OnTriggerStay2D(Collider2D other)
     {
+        if(other.gameObject.tag == "Player" && controllerNext==0)
+        {
+            FindObjectOfType<GameMaster>().controllerLevel=controllerNext;
+            Destroy(gameObject);
+        } 
         if(other.gameObject.tag == "Player")
         {
             canInteract=true;
