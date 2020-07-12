@@ -24,6 +24,7 @@ public class SwitchBehav : MonoBehaviour
         colorOff = gm.color1Off;
         color2On = gm.color2On;
         color2Off = gm.color2Off;
+        Invoke("StartColors", 0.1f);
     }
 
 
@@ -187,7 +188,16 @@ public class SwitchBehav : MonoBehaviour
                     }
                     else ground.gameObject.GetComponent<SpriteRenderer>().color = colorOff;
                 }
-                else
+                else if (ground.gameObject.layer == 11)
+                {
+                    ground.isEnabled = !ground.isEnabled;
+                    if (ground.isEnabled)
+                    {
+                        ground.gameObject.GetComponent<SpriteRenderer>().color = colorOn;
+                    }
+                    else ground.gameObject.GetComponent<SpriteRenderer>().color = colorOff;
+                }
+                else if (ground.gameObject.layer == 10)
                 {
                     ground.isEnabled = false;
                     ground.gameObject.GetComponent<SpriteRenderer>().color = color2Off;
@@ -204,11 +214,125 @@ public class SwitchBehav : MonoBehaviour
                     }
                     else ground.gameObject.GetComponent<SpriteRenderer>().color = color2Off;
                 }
-                else
+                else if (ground.gameObject.layer == 12)
+                {
+                    ground.isEnabled = !ground.isEnabled;
+                    if (ground.isEnabled)
+                    {
+                        ground.gameObject.GetComponent<SpriteRenderer>().color = color2On;
+                    }
+                    else ground.gameObject.GetComponent<SpriteRenderer>().color = color2Off;
+                }
+                else if (ground.gameObject.layer == 9)
                 {
                     ground.isEnabled = false;
                     ground.gameObject.GetComponent<SpriteRenderer>().color = colorOff;
                 }
+            }
+        }
+    }
+
+    void StartColors()
+    {
+        foreach (BouncingBall balls in bolas)
+        {
+            if (balls.gameObject.layer == 9 && balls.isEnabled)
+            {
+                balls.gameObject.GetComponent<SpriteRenderer>().color = colorOn;
+            }
+            else if (balls.gameObject.layer == 9 && !balls.isEnabled)
+            {
+                balls.gameObject.GetComponent<SpriteRenderer>().color = colorOff;
+            }
+
+            if (balls.gameObject.layer == 10 && balls.isEnabled)
+            {
+                balls.gameObject.GetComponent<SpriteRenderer>().color = color2On;
+            }
+            else if (balls.gameObject.layer == 10 && !balls.isEnabled)
+            {
+                balls.gameObject.GetComponent<SpriteRenderer>().color = color2Off;
+            }
+        }
+
+        foreach (EnemyGround ground in enGround)
+        {
+            if (ground.gameObject.layer == 9 && ground.isEnabled)
+            {
+                ground.gameObject.GetComponent<SpriteRenderer>().color = colorOn;
+            }
+            else if (ground.gameObject.layer == 9 && !ground.isEnabled)
+            {
+                ground.gameObject.GetComponent<SpriteRenderer>().color = colorOff;
+            }
+
+            if (ground.gameObject.layer == 10 && ground.isEnabled)
+            {
+                ground.gameObject.GetComponent<SpriteRenderer>().color = color2On;
+            }
+            else if (ground.gameObject.layer == 10 && !ground.isEnabled)
+            {
+                ground.gameObject.GetComponent<SpriteRenderer>().color = color2Off;
+            }
+        }
+
+        foreach (FlyEnemy fly in enFly)
+        {
+            if (fly.gameObject.layer == 9 && fly.isEnabled)
+            {
+                fly.gameObject.GetComponent<SpriteRenderer>().color = colorOn;
+            }
+            else if (fly.gameObject.layer == 9 && !fly.isEnabled)
+            {
+                fly.gameObject.GetComponent<SpriteRenderer>().color = colorOff;
+            }
+
+            if (fly.gameObject.layer == 10 && fly.isEnabled)
+            {
+                fly.gameObject.GetComponent<SpriteRenderer>().color = color2On;
+            }
+            else if (fly.gameObject.layer == 10 && !fly.isEnabled)
+            {
+                fly.gameObject.GetComponent<SpriteRenderer>().color = color2Off;
+            }
+        }
+
+        foreach (GroundColored ground in colGround)
+        {
+            if (ground.gameObject.layer == 9 && ground.isEnabled)
+            {
+                ground.gameObject.GetComponent<SpriteRenderer>().color = colorOn;
+            }
+            else if (ground.gameObject.layer == 9 && !ground.isEnabled)
+            {
+                ground.gameObject.GetComponent<SpriteRenderer>().color = colorOff;
+            }
+
+            if (ground.gameObject.layer == 10 && ground.isEnabled)
+            {
+                ground.gameObject.GetComponent<SpriteRenderer>().color = color2On;
+            }
+            else if (ground.gameObject.layer == 10 && !ground.isEnabled)
+            {
+                ground.gameObject.GetComponent<SpriteRenderer>().color = color2Off;
+            }
+
+            if (ground.gameObject.layer == 11 && ground.isEnabled)
+            {
+                ground.gameObject.GetComponent<SpriteRenderer>().color = colorOn;
+            }
+            else if (ground.gameObject.layer == 11 && !ground.isEnabled)
+            {
+                ground.gameObject.GetComponent<SpriteRenderer>().color = colorOff;
+            }
+
+            if (ground.gameObject.layer == 12 && ground.isEnabled)
+            {
+                ground.gameObject.GetComponent<SpriteRenderer>().color = color2On;
+            }
+            else if (ground.gameObject.layer == 12 && !ground.isEnabled)
+            {
+                ground.gameObject.GetComponent<SpriteRenderer>().color = color2Off;
             }
         }
     }
