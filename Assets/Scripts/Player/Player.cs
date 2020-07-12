@@ -27,6 +27,7 @@ public class Player : MonoBehaviour
             GameObject destroy = Instantiate(gm.particleDestroy, transform.position, Quaternion.identity);
             destroy.GetComponent<ParticleSystem>().Play();
             Destroy(GetComponent<SpriteRenderer>());
+            destroy(GetComponent<Collider2D>());
             Invoke("ResetScene", 0.3f);
         }
     }
