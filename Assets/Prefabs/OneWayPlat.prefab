@@ -141,7 +141,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 704a797583b393e408c2c842221d4091, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waitTime: 0.45
+  waitTime: 0.17
   others:
     serializedVersion: 2
     m_Bits: 55
