@@ -10,6 +10,7 @@ public class FlyingEnemy : MonoBehaviour
     int vTarget;
     bool reverse;
     public bool isEnabled;
+    bool facingRight = false;
 
     void Start()
     {
@@ -49,5 +50,10 @@ public class FlyingEnemy : MonoBehaviour
             reverse = !reverse;
             ChangePoint();
         }
+    }
+    void Flip()
+    {
+        facingRight = !facingRight;
+        transform.Rotate(0f, 180f, 0f);
     }
 }
