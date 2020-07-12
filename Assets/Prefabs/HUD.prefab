@@ -233,6 +233,7 @@ GameObject:
   - component: {fileID: 1205624013677530455}
   - component: {fileID: 1205624013677530454}
   - component: {fileID: 1205624013677530449}
+  - component: {fileID: 1550900411402483530}
   m_Layer: 5
   m_Name: HUD
   m_TagString: Untagged
@@ -323,6 +324,39 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &1550900411402483530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1205624013677530448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dca15bab096efef45b1b668152bf6d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveText: {fileID: 1205624013535386440}
+  upText: {fileID: 2756703055392047756}
+  downText: {fileID: 6939383030882345205}
+  leftText: {fileID: 6939383030402067314}
+  rightText: {fileID: 6939383031021961576}
+  rightFields:
+  - {fileID: 6939383031252765149}
+  - {fileID: 6939383031021961590}
+  - {fileID: 1205624014029992607}
+  upFields:
+  - {fileID: 8696136083973573870}
+  - {fileID: 648652993389033374}
+  - {fileID: 1205624014297243637}
+  downFields:
+  - {fileID: 6939383030459687680}
+  - {fileID: 6939383030882345203}
+  - {fileID: 1205624014784101428}
+  leftFields:
+  - {fileID: 6939383031294739698}
+  - {fileID: 6939383030402067312}
+  - {fileID: 1205624015064106064}
 --- !u!1 &1205624013778238320
 GameObject:
   m_ObjectHideFlags: 0
@@ -1069,7 +1103,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1205624015047179651
 Transform:
   m_ObjectHideFlags: 0

@@ -17,7 +17,7 @@ public class EnableButtons : MonoBehaviour
             FindObjectOfType<GameMaster>().controllerLevel=controllerNext;
             Destroy(gameObject);
         } 
-        if(other.gameObject.tag == "Player")
+        else if(other.gameObject.tag == "Player")
         {
             canInteract=true;
             interactCanvas.SetActive(true);

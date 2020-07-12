@@ -15,10 +15,6 @@ public class HudController : MonoBehaviour
 
     void Start()
     {
-        foreach (var item in collection)
-        {
-            
-        }
         gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameMaster>();
         playerScript = FindObjectOfType<Player>();
     }
