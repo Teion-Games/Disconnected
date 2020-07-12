@@ -54,6 +54,7 @@ public class SwitchBehav : MonoBehaviour
         colGround = gm.colGround;
         if (canInteract && input.inputActions.PlayerControls.Interact.triggered)
         {
+            AudioManager.instance.PlaySound("Activate");
             SwitchColors();
         }
     }

@@ -5,27 +5,27 @@ public class EnableButtons : MonoBehaviour
     [SerializeField] int controllerNext;
     PlayerInput input;
     [SerializeField] GameObject interactCanvas;
-    bool canInteract=false;
+    bool canInteract = false;
     void Start()
     {
         input = FindObjectOfType<PlayerInput>();
     }
     void OnTriggerStay2D(Collider2D other)
     {
-        if(other.gameObject.tag == "Player" && controllerNext==0)
+        if (other.gameObject.tag == "Player" && controllerNext == 0)
         {
-            FindObjectOfType<GameMaster>().controllerLevel=controllerNext;
+            FindObjectOfType<GameMaster>().controllerLevel = controllerNext;
             Destroy(gameObject);
-        } 
-        else if(other.gameObject.tag == "Player")
+        }
+        else if (other.gameObject.tag == "Player")
         {
-            canInteract=true;
+            canInteract = true;
             interactCanvas.SetActive(true);
         }
     }
     void OnTriggerExit2D(Collider2D other)
     {
-        if(other.gameObject.tag == "Player")
+        if (other.gameObject.tag == "Player")
         {
             canInteract = false;
             interactCanvas.SetActive(false);
@@ -34,9 +34,10 @@ public class EnableButtons : MonoBehaviour
 
     void Update()
     {
-        if(canInteract && input.inputActions.PlayerControls.Interact.triggered)
+        if (canInteract && input.inputActions.PlayerControls.Interact.triggered)
         {
-            FindObjectOfType<GameMaster>().controllerLevel=controllerNext;
+            AudioManager.instance.PlaySound("Activate");
+            FindObjectOfType<GameMaster>().controllerLevel = controllerNext;
             Destroy(gameObject);
         }
     }

@@ -7,13 +7,11 @@ public class EnemyGround : MonoBehaviour
     bool _enabled;
     public bool enabled { get { return _enabled; } set { _enabled = value; } }
     [SerializeField] float point1, point2;
-    [SerializeField] float waitTime = 1f;
     [SerializeField] float vel;
     [SerializeField] int vida;
     int shotCounter = 0;
     Rigidbody2D rb;
     bool facingRight = true;
-    float waitTimeSave;
     float dir1, dir2;
     bool patrol = true;
     public bool isEnabled;
@@ -22,7 +20,6 @@ public class EnemyGround : MonoBehaviour
     void Start()
     {
         col = GetComponent<Collider2D>();
-        waitTimeSave = waitTime;
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
     }
@@ -67,16 +64,7 @@ public class EnemyGround : MonoBehaviour
         }
         if (Mathf.Abs(point1 - transform.position.x) <= 0.4)
         {
-            rb.velocity = new Vector2(0f, 0f);
-            if (waitTime <= 0)
-            {
-                waitTime = waitTimeSave;
-                patrol = false;
-            }
-            else
-            {
-                waitTime -= Time.deltaTime;
-            }
+            patrol = false;
         }
     }
 
@@ -96,16 +84,7 @@ public class EnemyGround : MonoBehaviour
         }
         if (Mathf.Abs(point2 - transform.position.x) <= 0.4)
         {
-            rb.velocity = new Vector2(0f, 0f);
-            if (waitTime <= 0)
-            {
-                waitTime = waitTimeSave;
-                patrol = true;
-            }
-            else
-            {
-                waitTime -= Time.deltaTime;
-            }
+            patrol = true;
         }
     }
 
