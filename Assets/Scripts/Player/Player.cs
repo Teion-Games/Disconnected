@@ -14,7 +14,7 @@ public class Player : MonoBehaviour
     void Start()
     {
         _playerRB = GetComponent<Rigidbody2D>();
-        _currentController = 1;
+        _currentController = 2;
         gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameMaster>();
 		transform.position = gm._lastCheckPointPos;
     }
@@ -25,6 +25,15 @@ public class Player : MonoBehaviour
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
             gm.CheckReset();
+        }
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if(other.gameObject.tag=="ShowText")
+        {
+            gm.showText = false;
+            Destroy(other.gameObject);
         }
     }
 }

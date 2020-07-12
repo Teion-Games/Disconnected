@@ -49,6 +49,22 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""Move2"",
+                    ""type"": ""Button"",
+                    ""id"": ""51946887-7469-491e-9fef-20ea818efb68"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""JumpFall2"",
+                    ""type"": ""Button"",
+                    ""id"": ""ca82cd6c-438e-4166-8423-13e5130c79d5"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -139,6 +155,72 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
                     ""action"": ""Interact"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""1D Axis"",
+                    ""id"": ""14e002b0-d1cb-46a7-a2ee-15508b674ad7"",
+                    ""path"": ""1DAxis"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move2"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""negative"",
+                    ""id"": ""7306f747-1ac1-4666-8a04-9d02d6999d93"",
+                    ""path"": ""<Keyboard>/a"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move2"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""positive"",
+                    ""id"": ""d95d15d3-3b22-4798-ae74-69407f286849"",
+                    ""path"": ""<Keyboard>/d"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move2"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""1D Axis"",
+                    ""id"": ""0b59c1bc-1b9b-4461-bf52-30eb520b3a96"",
+                    ""path"": ""1DAxis"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""JumpFall2"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""negative"",
+                    ""id"": ""5818196b-54cd-4359-b5ae-d7dc90e77030"",
+                    ""path"": ""<Keyboard>/s"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""JumpFall2"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""positive"",
+                    ""id"": ""adea7078-792f-4f73-9fa2-a5f59b408c3e"",
+                    ""path"": ""<Keyboard>/w"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""JumpFall2"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
                 }
             ]
         }
@@ -151,6 +233,8 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
         m_PlayerControls_JumpFall1 = m_PlayerControls.FindAction("JumpFall1", throwIfNotFound: true);
         m_PlayerControls_Fire = m_PlayerControls.FindAction("Fire", throwIfNotFound: true);
         m_PlayerControls_Interact = m_PlayerControls.FindAction("Interact", throwIfNotFound: true);
+        m_PlayerControls_Move2 = m_PlayerControls.FindAction("Move2", throwIfNotFound: true);
+        m_PlayerControls_JumpFall2 = m_PlayerControls.FindAction("JumpFall2", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -204,6 +288,8 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
     private readonly InputAction m_PlayerControls_JumpFall1;
     private readonly InputAction m_PlayerControls_Fire;
     private readonly InputAction m_PlayerControls_Interact;
+    private readonly InputAction m_PlayerControls_Move2;
+    private readonly InputAction m_PlayerControls_JumpFall2;
     public struct PlayerControlsActions
     {
         private @PlayerInputActions m_Wrapper;
@@ -212,6 +298,8 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
         public InputAction @JumpFall1 => m_Wrapper.m_PlayerControls_JumpFall1;
         public InputAction @Fire => m_Wrapper.m_PlayerControls_Fire;
         public InputAction @Interact => m_Wrapper.m_PlayerControls_Interact;
+        public InputAction @Move2 => m_Wrapper.m_PlayerControls_Move2;
+        public InputAction @JumpFall2 => m_Wrapper.m_PlayerControls_JumpFall2;
         public InputActionMap Get() { return m_Wrapper.m_PlayerControls; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -233,6 +321,12 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
                 @Interact.started -= m_Wrapper.m_PlayerControlsActionsCallbackInterface.OnInteract;
                 @Interact.performed -= m_Wrapper.m_PlayerControlsActionsCallbackInterface.OnInteract;
                 @Interact.canceled -= m_Wrapper.m_PlayerControlsActionsCallbackInterface.OnInteract;
+                @Move2.started -= m_Wrapper.m_PlayerControlsActionsCallbackInterface.OnMove2;
+                @Move2.performed -= m_Wrapper.m_PlayerControlsActionsCallbackInterface.OnMove2;
+                @Move2.canceled -= m_Wrapper.m_PlayerControlsActionsCallbackInterface.OnMove2;
+                @JumpFall2.started -= m_Wrapper.m_PlayerControlsActionsCallbackInterface.OnJumpFall2;
+                @JumpFall2.performed -= m_Wrapper.m_PlayerControlsActionsCallbackInterface.OnJumpFall2;
+                @JumpFall2.canceled -= m_Wrapper.m_PlayerControlsActionsCallbackInterface.OnJumpFall2;
             }
             m_Wrapper.m_PlayerControlsActionsCallbackInterface = instance;
             if (instance != null)
@@ -249,6 +343,12 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
                 @Interact.started += instance.OnInteract;
                 @Interact.performed += instance.OnInteract;
                 @Interact.canceled += instance.OnInteract;
+                @Move2.started += instance.OnMove2;
+                @Move2.performed += instance.OnMove2;
+                @Move2.canceled += instance.OnMove2;
+                @JumpFall2.started += instance.OnJumpFall2;
+                @JumpFall2.performed += instance.OnJumpFall2;
+                @JumpFall2.canceled += instance.OnJumpFall2;
             }
         }
     }
@@ -259,5 +359,7 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
         void OnJumpFall1(InputAction.CallbackContext context);
         void OnFire(InputAction.CallbackContext context);
         void OnInteract(InputAction.CallbackContext context);
+        void OnMove2(InputAction.CallbackContext context);
+        void OnJumpFall2(InputAction.CallbackContext context);
     }
 }

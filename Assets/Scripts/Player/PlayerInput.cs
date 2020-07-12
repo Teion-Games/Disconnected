@@ -69,7 +69,32 @@ public class PlayerInput : MonoBehaviour
                 }
                 break;
             case 2:
-                Debug.Log("using second controller");
+                if(inputActions.PlayerControls.Move2.ReadValue<float>()>0)
+                {
+                    _movH = 1;
+                } 
+                else if (inputActions.PlayerControls.Move2.ReadValue<float>()<0 && controllerLevel > 2) 
+                {
+                    _movH = -1;
+                }
+                else if (inputActions.PlayerControls.Move2.ReadValue<float>()==0)
+                {
+                    _movH = 0;
+                }
+
+                if(inputActions.PlayerControls.JumpFall2.ReadValue<float>()>0 && controllerLevel > 0)
+                {
+                    _jumpTrig = true;
+                } 
+                else if (inputActions.PlayerControls.JumpFall2.ReadValue<float>() < 0 && controllerLevel > 1)
+                {
+                    _fallTrig = true;
+                    _jumpTrig = false;
+                } else if (inputActions.PlayerControls.JumpFall2.ReadValue<float>() == 0)
+                {
+                    _fallTrig = false;
+                    _jumpTrig = false;
+                }
                 break;
         }
     }

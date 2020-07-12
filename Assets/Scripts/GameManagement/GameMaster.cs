@@ -23,6 +23,8 @@ public class GameMaster : MonoBehaviour
     public int controllerLevel {get {return _controllerLevel;} set  {_controllerLevel = value;} }
     public bool destroyThem = false;
     public bool isFirst = false;
+    bool _showText=true;
+    public bool showText {get {return _showText;} set  {_showText = value;} }
     GameObject[] butaos;
 
     void Update()
