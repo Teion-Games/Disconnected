@@ -19,24 +19,27 @@ public class PlayerOverflow : MonoBehaviour
     void Start()
     {
         input = GetComponent<PlayerInput>();
-        _canOverflow=true;
+        _canOverflow=false;
         playerScript = GetComponent<Player>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        overFill.fillAmount = overflowAmount;
+        if(_canOverflow)
+        {
+            overFill.fillAmount = overflowAmount;
     
-        if(input.movH != 0 || input.jumpTrig || input.fallTrig)
-        {
-            overflowAmount += (Time.deltaTime * vel)/100f;
-        }
-        if(overflowAmount>=1)
-        {
-            overflowAmount = 0;
-            playerScript.currentController = Randomize(playerScript.currentController);
-        }
+            if(input.movH != 0 || input.jumpTrig || input.fallTrig)
+            {
+                overflowAmount += (Time.deltaTime * vel)/100f;
+            }
+            if(overflowAmount>=1)
+            {
+                overflowAmount = 0;
+                playerScript.currentController = Randomize(playerScript.currentController);
+            }
+        } else overflowAmount =0;
     }
 
     int Randomize(int notChange)

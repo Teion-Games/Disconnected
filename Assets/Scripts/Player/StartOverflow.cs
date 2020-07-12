@@ -8,7 +8,7 @@ public class StartOverflow : MonoBehaviour
 
     void Start()
     {
-        playerO = GetComponent<PlayerOverflow>();
+        playerO = FindObjectOfType<PlayerOverflow>();
     }
     void OnTriggerEnter2D(Collider2D other)
     {
