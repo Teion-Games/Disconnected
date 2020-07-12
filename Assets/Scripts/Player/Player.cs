@@ -46,6 +46,7 @@ public class Player : MonoBehaviour
     }
     void ResetScene()
     {
+        gm.deathCounter += 1;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         gm.CheckReset();
     }
