@@ -8,18 +8,23 @@ public class MainMenu : MonoBehaviour
     [SerializeField] private string gameScene;
     [SerializeField] private string creditScene;
 
+    void Start()
+    {
+        AudioManager.instance.PlaySound("Menu");
+    }
+
     public void Play()
     {
         SceneManager.LoadScene(gameScene);
     }
 
     public void Credits()
-	{
-		SceneManager.LoadScene(creditScene);
-	}
+    {
+        SceneManager.LoadScene(creditScene);
+    }
 
-	public void QuitGame()
-	{
-		Application.Quit();
-	}
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
 }

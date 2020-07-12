@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -3248,41 +3248,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6053912266792109526, guid: a67cbacff28cd994a955c3541d0a2da8,
-        type: 3}
-      propertyPath: sounds.Array.size
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 6053912266792109526, guid: a67cbacff28cd994a955c3541d0a2da8,
-        type: 3}
-      propertyPath: sounds.Array.data[3].name
-      value: Main
-      objectReference: {fileID: 0}
-    - target: {fileID: 6053912266792109526, guid: a67cbacff28cd994a955c3541d0a2da8,
-        type: 3}
-      propertyPath: sounds.Array.data[3].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 8899765a3de323f48a647855e0a3f344, type: 3}
-    - target: {fileID: 6053912266792109526, guid: a67cbacff28cd994a955c3541d0a2da8,
-        type: 3}
-      propertyPath: sounds.Array.data[3].volume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6053912266792109526, guid: a67cbacff28cd994a955c3541d0a2da8,
-        type: 3}
-      propertyPath: sounds.Array.data[3].pitch
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6053912266792109526, guid: a67cbacff28cd994a955c3541d0a2da8,
-        type: 3}
-      propertyPath: sounds.Array.data[3].randomVolume
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6053912266792109526, guid: a67cbacff28cd994a955c3541d0a2da8,
-        type: 3}
-      propertyPath: sounds.Array.data[3].randomPitch
-      value: 0.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a67cbacff28cd994a955c3541d0a2da8, type: 3}
