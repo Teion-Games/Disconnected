@@ -12,8 +12,10 @@ public class FlyEnemy : MonoBehaviour
     int shotCounter = 0;
     Animator anim;
     bool facingRight = true;
+    GameMaster gm;
     void Start()
     {
+        gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameMaster>();
         anim = GetComponent<Animator>();
         col = GetComponent<Collider2D>();
         fly = GetComponentInChildren<FlyingEnemy>();
@@ -54,8 +56,9 @@ public class FlyEnemy : MonoBehaviour
             shotCounter++;
             if (shotCounter == vida)
             {
+                GameObject destroy = Instantiate(gm.particleDestroy, transform.position, Quaternion.identity);
+                destroy.GetComponent<ParticleSystem>().Play();
                 gameObject.SetActive(false);
-                //playdeathparticles
             }
         }
     }

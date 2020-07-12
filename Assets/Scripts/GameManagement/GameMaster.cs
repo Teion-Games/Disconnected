@@ -36,6 +36,7 @@ public class GameMaster : MonoBehaviour
     public EnemyGround[] enGround;
     public FlyEnemy[] enFly;
     public GroundColored[] colGround;
+    public GameObject particleDestroy;
 
     void Start()
     {

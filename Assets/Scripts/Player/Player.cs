@@ -13,6 +13,7 @@ public class Player : MonoBehaviour
     public int currentController { get { return _currentController; } set { _currentController = value; } }
     void Start()
     {
+        AudioManager.instance.PlaySound("Main");
         _playerRB = GetComponent<Rigidbody2D>();
         _currentController = 1;
         gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameMaster>();
@@ -23,8 +24,10 @@ public class Player : MonoBehaviour
     {
         if (other.gameObject.tag == "Enemy")
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-            gm.CheckReset();
+            GameObject destroy = Instantiate(gm.particleDestroy, transform.position, Quaternion.identity);
+            destroy.GetComponent<ParticleSystem>().Play();
+            Destroy(GetComponent<SpriteRenderer>());
+            Invoke("ResetScene", 0.3f);
         }
     }
 
@@ -35,5 +38,11 @@ public class Player : MonoBehaviour
             gm.showText = false;
             Destroy(other.gameObject);
         }
+    }
+
+    void ResetScene()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        gm.CheckReset();
     }
 }

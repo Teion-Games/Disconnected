@@ -17,8 +17,10 @@ public class EnemyGround : MonoBehaviour
     public bool isEnabled;
     Collider2D col;
     Animator anim;
+    private GameMaster gm;
     void Start()
     {
+        gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameMaster>();
         col = GetComponent<Collider2D>();
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
@@ -97,8 +99,9 @@ public class EnemyGround : MonoBehaviour
             shotCounter++;
             if (shotCounter == vida)
             {
+                GameObject destroy = Instantiate(gm.particleDestroy, transform.position, Quaternion.identity);
+                destroy.GetComponent<ParticleSystem>().Play();
                 gameObject.SetActive(false);
-                //playdeathparticles
             }
         }
     }
