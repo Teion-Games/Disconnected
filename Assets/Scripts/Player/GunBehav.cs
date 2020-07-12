@@ -31,6 +31,7 @@ public class GunBehav : MonoBehaviour
             GameObject shot = Instantiate(bullet, gunPoint.position, Quaternion.identity);
             shot.GetComponent<Rigidbody2D>().velocity = transform.TransformDirection(Vector3.right * bulletSpeed);
             gunCD = savegunCD;
+            GetComponent<PlayerOverflow>().ShotIncrement();
         } 
     }
 

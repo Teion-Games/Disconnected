@@ -65,6 +65,70 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""Move3"",
+                    ""type"": ""Button"",
+                    ""id"": ""08f1cddb-b92e-4303-8bdb-9008ff932ba4"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""JumpFall3"",
+                    ""type"": ""Button"",
+                    ""id"": ""5dc9d1bd-5241-4d2d-88aa-16d374de8b5d"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""Move4"",
+                    ""type"": ""Button"",
+                    ""id"": ""d487ff7d-bf94-4d79-820c-10f475e455fe"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""JumpFall4"",
+                    ""type"": ""Button"",
+                    ""id"": ""7649ac50-06ce-4c18-9954-beb77d173d19"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""Move5"",
+                    ""type"": ""Button"",
+                    ""id"": ""fd9a08bf-58ea-4756-8eef-516354a05be3"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""JumpFall5"",
+                    ""type"": ""Button"",
+                    ""id"": ""f2e47113-3db2-4419-aed4-7b044eb41c21"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""Move6"",
+                    ""type"": ""Button"",
+                    ""id"": ""31c8f467-508b-4716-afaa-6779c3d2e28c"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""JumpFall6"",
+                    ""type"": ""Button"",
+                    ""id"": ""4dfd0322-cdf0-4651-b61c-4f53b3ab9a85"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -221,6 +285,270 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
                     ""action"": ""JumpFall2"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""1D Axis"",
+                    ""id"": ""9fd3e5ae-ad48-47d6-a9dd-37abcfe5ed20"",
+                    ""path"": ""1DAxis"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move3"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""negative"",
+                    ""id"": ""5f782750-d750-49cb-8e0c-6458d6d1de9e"",
+                    ""path"": ""<Keyboard>/f"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move3"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""positive"",
+                    ""id"": ""95ce5438-b8c0-45bc-8cdc-7025e100320d"",
+                    ""path"": ""<Keyboard>/h"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move3"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""1D Axis"",
+                    ""id"": ""a5f59eda-c5f3-4149-9f0e-0e5423c99ccc"",
+                    ""path"": ""1DAxis"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""JumpFall3"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""negative"",
+                    ""id"": ""47783072-dd39-4851-af23-c76a72265d5e"",
+                    ""path"": ""<Keyboard>/g"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""JumpFall3"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""positive"",
+                    ""id"": ""b847644d-ce02-4cca-b0e4-4ac0cdc9a4dd"",
+                    ""path"": ""<Keyboard>/t"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""JumpFall3"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""1D Axis"",
+                    ""id"": ""01df3329-efe3-435d-b400-8f330c7ff722"",
+                    ""path"": ""1DAxis"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move4"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""negative"",
+                    ""id"": ""adcc2c75-76d0-4944-9429-ee5881c62f2e"",
+                    ""path"": ""<Keyboard>/j"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move4"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""positive"",
+                    ""id"": ""128c59d6-b0ea-4288-bb44-f8d220f27888"",
+                    ""path"": ""<Keyboard>/l"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move4"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""1D Axis"",
+                    ""id"": ""b476df8b-7513-4ee0-85ce-eacd452e1208"",
+                    ""path"": ""1DAxis"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""JumpFall4"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""negative"",
+                    ""id"": ""5512b618-1545-4684-a7ff-918a9d4e7972"",
+                    ""path"": ""<Keyboard>/k"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""JumpFall4"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""positive"",
+                    ""id"": ""53622547-2ee4-482d-8e29-382bd05b71e4"",
+                    ""path"": ""<Keyboard>/i"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""JumpFall4"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""1D Axis"",
+                    ""id"": ""fbc1ed11-c2fc-421f-af76-72ea41003f3c"",
+                    ""path"": ""1DAxis"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move5"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""negative"",
+                    ""id"": ""5bb6ac28-57b3-4685-9c93-203cab170ef5"",
+                    ""path"": ""<Keyboard>/z"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move5"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""positive"",
+                    ""id"": ""e60b8fb2-594a-45c9-89e1-dbe51bd3cd9b"",
+                    ""path"": ""<Keyboard>/c"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move5"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""1D Axis"",
+                    ""id"": ""29b793c8-8863-45ab-9ff1-92fd21518f8c"",
+                    ""path"": ""1DAxis"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""JumpFall5"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""negative"",
+                    ""id"": ""a7693743-23f3-40db-9c77-b7d344063ca0"",
+                    ""path"": ""<Keyboard>/x"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""JumpFall5"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""positive"",
+                    ""id"": ""e35dbfc1-a1be-4cf8-af62-e95c7d345bc6"",
+                    ""path"": ""<Keyboard>/s"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""JumpFall5"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""1D Axis"",
+                    ""id"": ""f6615e92-64a4-4ea5-bff3-7a8fae0edab6"",
+                    ""path"": ""1DAxis"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move6"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""negative"",
+                    ""id"": ""665a54b1-8fb0-4f37-97ad-d0998d5d1737"",
+                    ""path"": ""<Keyboard>/b"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move6"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""positive"",
+                    ""id"": ""b3969ae4-940a-47c9-b518-36dcc025fe65"",
+                    ""path"": ""<Keyboard>/m"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move6"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""1D Axis"",
+                    ""id"": ""14fe5af5-e00f-440c-a964-c1fd85f5df0f"",
+                    ""path"": ""1DAxis"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""JumpFall6"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""negative"",
+                    ""id"": ""a0a524ca-41b9-40ea-a6bd-64c139f29434"",
+                    ""path"": ""<Keyboard>/n"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""JumpFall6"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""positive"",
+                    ""id"": ""a341396d-631d-4f6b-a9a0-d633bb77dfc3"",
+                    ""path"": ""<Keyboard>/h"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""JumpFall6"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
                 }
             ]
         }
@@ -235,6 +563,14 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
         m_PlayerControls_Interact = m_PlayerControls.FindAction("Interact", throwIfNotFound: true);
         m_PlayerControls_Move2 = m_PlayerControls.FindAction("Move2", throwIfNotFound: true);
         m_PlayerControls_JumpFall2 = m_PlayerControls.FindAction("JumpFall2", throwIfNotFound: true);
+        m_PlayerControls_Move3 = m_PlayerControls.FindAction("Move3", throwIfNotFound: true);
+        m_PlayerControls_JumpFall3 = m_PlayerControls.FindAction("JumpFall3", throwIfNotFound: true);
+        m_PlayerControls_Move4 = m_PlayerControls.FindAction("Move4", throwIfNotFound: true);
+        m_PlayerControls_JumpFall4 = m_PlayerControls.FindAction("JumpFall4", throwIfNotFound: true);
+        m_PlayerControls_Move5 = m_PlayerControls.FindAction("Move5", throwIfNotFound: true);
+        m_PlayerControls_JumpFall5 = m_PlayerControls.FindAction("JumpFall5", throwIfNotFound: true);
+        m_PlayerControls_Move6 = m_PlayerControls.FindAction("Move6", throwIfNotFound: true);
+        m_PlayerControls_JumpFall6 = m_PlayerControls.FindAction("JumpFall6", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -290,6 +626,14 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
     private readonly InputAction m_PlayerControls_Interact;
     private readonly InputAction m_PlayerControls_Move2;
     private readonly InputAction m_PlayerControls_JumpFall2;
+    private readonly InputAction m_PlayerControls_Move3;
+    private readonly InputAction m_PlayerControls_JumpFall3;
+    private readonly InputAction m_PlayerControls_Move4;
+    private readonly InputAction m_PlayerControls_JumpFall4;
+    private readonly InputAction m_PlayerControls_Move5;
+    private readonly InputAction m_PlayerControls_JumpFall5;
+    private readonly InputAction m_PlayerControls_Move6;
+    private readonly InputAction m_PlayerControls_JumpFall6;
     public struct PlayerControlsActions
     {
         private @PlayerInputActions m_Wrapper;
@@ -300,6 +644,14 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
         public InputAction @Interact => m_Wrapper.m_PlayerControls_Interact;
         public InputAction @Move2 => m_Wrapper.m_PlayerControls_Move2;
         public InputAction @JumpFall2 => m_Wrapper.m_PlayerControls_JumpFall2;
+        public InputAction @Move3 => m_Wrapper.m_PlayerControls_Move3;
+        public InputAction @JumpFall3 => m_Wrapper.m_PlayerControls_JumpFall3;
+        public InputAction @Move4 => m_Wrapper.m_PlayerControls_Move4;
+        public InputAction @JumpFall4 => m_Wrapper.m_PlayerControls_JumpFall4;
+        public InputAction @Move5 => m_Wrapper.m_PlayerControls_Move5;
+        public InputAction @JumpFall5 => m_Wrapper.m_PlayerControls_JumpFall5;
+        public InputAction @Move6 => m_Wrapper.m_PlayerControls_Move6;
+        public InputAction @JumpFall6 => m_Wrapper.m_PlayerControls_JumpFall6;
         public InputActionMap Get() { return m_Wrapper.m_PlayerControls; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -327,6 +679,30 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
                 @JumpFall2.started -= m_Wrapper.m_PlayerControlsActionsCallbackInterface.OnJumpFall2;
                 @JumpFall2.performed -= m_Wrapper.m_PlayerControlsActionsCallbackInterface.OnJumpFall2;
                 @JumpFall2.canceled -= m_Wrapper.m_PlayerControlsActionsCallbackInterface.OnJumpFall2;
+                @Move3.started -= m_Wrapper.m_PlayerControlsActionsCallbackInterface.OnMove3;
+                @Move3.performed -= m_Wrapper.m_PlayerControlsActionsCallbackInterface.OnMove3;
+                @Move3.canceled -= m_Wrapper.m_PlayerControlsActionsCallbackInterface.OnMove3;
+                @JumpFall3.started -= m_Wrapper.m_PlayerControlsActionsCallbackInterface.OnJumpFall3;
+                @JumpFall3.performed -= m_Wrapper.m_PlayerControlsActionsCallbackInterface.OnJumpFall3;
+                @JumpFall3.canceled -= m_Wrapper.m_PlayerControlsActionsCallbackInterface.OnJumpFall3;
+                @Move4.started -= m_Wrapper.m_PlayerControlsActionsCallbackInterface.OnMove4;
+                @Move4.performed -= m_Wrapper.m_PlayerControlsActionsCallbackInterface.OnMove4;
+                @Move4.canceled -= m_Wrapper.m_PlayerControlsActionsCallbackInterface.OnMove4;
+                @JumpFall4.started -= m_Wrapper.m_PlayerControlsActionsCallbackInterface.OnJumpFall4;
+                @JumpFall4.performed -= m_Wrapper.m_PlayerControlsActionsCallbackInterface.OnJumpFall4;
+                @JumpFall4.canceled -= m_Wrapper.m_PlayerControlsActionsCallbackInterface.OnJumpFall4;
+                @Move5.started -= m_Wrapper.m_PlayerControlsActionsCallbackInterface.OnMove5;
+                @Move5.performed -= m_Wrapper.m_PlayerControlsActionsCallbackInterface.OnMove5;
+                @Move5.canceled -= m_Wrapper.m_PlayerControlsActionsCallbackInterface.OnMove5;
+                @JumpFall5.started -= m_Wrapper.m_PlayerControlsActionsCallbackInterface.OnJumpFall5;
+                @JumpFall5.performed -= m_Wrapper.m_PlayerControlsActionsCallbackInterface.OnJumpFall5;
+                @JumpFall5.canceled -= m_Wrapper.m_PlayerControlsActionsCallbackInterface.OnJumpFall5;
+                @Move6.started -= m_Wrapper.m_PlayerControlsActionsCallbackInterface.OnMove6;
+                @Move6.performed -= m_Wrapper.m_PlayerControlsActionsCallbackInterface.OnMove6;
+                @Move6.canceled -= m_Wrapper.m_PlayerControlsActionsCallbackInterface.OnMove6;
+                @JumpFall6.started -= m_Wrapper.m_PlayerControlsActionsCallbackInterface.OnJumpFall6;
+                @JumpFall6.performed -= m_Wrapper.m_PlayerControlsActionsCallbackInterface.OnJumpFall6;
+                @JumpFall6.canceled -= m_Wrapper.m_PlayerControlsActionsCallbackInterface.OnJumpFall6;
             }
             m_Wrapper.m_PlayerControlsActionsCallbackInterface = instance;
             if (instance != null)
@@ -349,6 +725,30 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
                 @JumpFall2.started += instance.OnJumpFall2;
                 @JumpFall2.performed += instance.OnJumpFall2;
                 @JumpFall2.canceled += instance.OnJumpFall2;
+                @Move3.started += instance.OnMove3;
+                @Move3.performed += instance.OnMove3;
+                @Move3.canceled += instance.OnMove3;
+                @JumpFall3.started += instance.OnJumpFall3;
+                @JumpFall3.performed += instance.OnJumpFall3;
+                @JumpFall3.canceled += instance.OnJumpFall3;
+                @Move4.started += instance.OnMove4;
+                @Move4.performed += instance.OnMove4;
+                @Move4.canceled += instance.OnMove4;
+                @JumpFall4.started += instance.OnJumpFall4;
+                @JumpFall4.performed += instance.OnJumpFall4;
+                @JumpFall4.canceled += instance.OnJumpFall4;
+                @Move5.started += instance.OnMove5;
+                @Move5.performed += instance.OnMove5;
+                @Move5.canceled += instance.OnMove5;
+                @JumpFall5.started += instance.OnJumpFall5;
+                @JumpFall5.performed += instance.OnJumpFall5;
+                @JumpFall5.canceled += instance.OnJumpFall5;
+                @Move6.started += instance.OnMove6;
+                @Move6.performed += instance.OnMove6;
+                @Move6.canceled += instance.OnMove6;
+                @JumpFall6.started += instance.OnJumpFall6;
+                @JumpFall6.performed += instance.OnJumpFall6;
+                @JumpFall6.canceled += instance.OnJumpFall6;
             }
         }
     }
@@ -361,5 +761,13 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
         void OnInteract(InputAction.CallbackContext context);
         void OnMove2(InputAction.CallbackContext context);
         void OnJumpFall2(InputAction.CallbackContext context);
+        void OnMove3(InputAction.CallbackContext context);
+        void OnJumpFall3(InputAction.CallbackContext context);
+        void OnMove4(InputAction.CallbackContext context);
+        void OnJumpFall4(InputAction.CallbackContext context);
+        void OnMove5(InputAction.CallbackContext context);
+        void OnJumpFall5(InputAction.CallbackContext context);
+        void OnMove6(InputAction.CallbackContext context);
+        void OnJumpFall6(InputAction.CallbackContext context);
     }
 }
