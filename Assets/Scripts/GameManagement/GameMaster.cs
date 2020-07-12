@@ -22,7 +22,8 @@ public class GameMaster : MonoBehaviour
 
     [SerializeField]
     private Vector3 lastCheckPointPos;
-
+    int _deathCounter = 0;
+    public int deathCounter { get { return _deathCounter; } set { _deathCounter = value; } }
     public Vector3 _lastCheckPointPos { get { return lastCheckPointPos; } set { lastCheckPointPos = value; } }
     private int _controllerLevel = 0;
     public int controllerLevel { get { return _controllerLevel; } set { _controllerLevel = value; } }
