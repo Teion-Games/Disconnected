@@ -4,10 +4,13 @@ using UnityEngine;
 
 public class FlyEnemy : MonoBehaviour
 {
+    Collider2D col;
     FlyingEnemy fly;
     Rigidbody2D rb;
+    public bool isEnabled;
     void Start()
     {
+        col = GetComponent<Collider2D>();
         fly = GetComponentInChildren<FlyingEnemy>();
         rb = GetComponent<Rigidbody2D>();
     }
@@ -15,12 +18,22 @@ public class FlyEnemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        rb.velocity = fly.rb.velocity;
+        col.enabled = isEnabled;
+        if (isEnabled)
+        {
+            rb.velocity = fly.rb.velocity;
+            fly.isEnabled = true;
+        }
+        else
+        {
+            rb.velocity = new Vector2(0, 0);
+            fly.isEnabled = false;
+        }
     }
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.gameObject.tag=="Bullet")
+        if (other.gameObject.tag == "Bullet")
         {
             Destroy(gameObject);
         }

@@ -9,19 +9,19 @@ public class Player : MonoBehaviour
     Rigidbody2D _playerRB;
     private GameMaster gm;
 
-    public Rigidbody2D playerRB {get {return _playerRB; }  set { _playerRB = value; } }
-    public int currentController {get {return _currentController;} set  {_currentController = value;} }
+    public Rigidbody2D playerRB { get { return _playerRB; } set { _playerRB = value; } }
+    public int currentController { get { return _currentController; } set { _currentController = value; } }
     void Start()
     {
         _playerRB = GetComponent<Rigidbody2D>();
-        _currentController = 2;
+        _currentController = 1;
         gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameMaster>();
-		transform.position = gm._lastCheckPointPos;
+        transform.position = gm._lastCheckPointPos;
     }
 
-    void OnCollisionEnter2D (Collision2D other)
+    void OnCollisionEnter2D(Collision2D other)
     {
-        if(other.gameObject.tag=="Enemy")
+        if (other.gameObject.tag == "Enemy")
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
             gm.CheckReset();
@@ -30,7 +30,7 @@ public class Player : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.gameObject.tag=="ShowText")
+        if (other.gameObject.tag == "ShowText")
         {
             gm.showText = false;
             Destroy(other.gameObject);
