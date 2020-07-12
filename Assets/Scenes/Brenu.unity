@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -1834,28 +1834,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 33
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1726239211 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1937488518727372451, guid: a7465bbb96f2bc84a824ad8daa25fd47,
-    type: 3}
-  m_PrefabInstance: {fileID: 1937488518771562791}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1726239222
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1726239211}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e71bf09a85f990478bc7583134ca24d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  overFill: {fileID: 414747807}
-  vel: 40
-  shotMult: 30
-  lastController: 7
 --- !u!1 &1742612590
 GameObject:
   m_ObjectHideFlags: 0
@@ -2645,10 +2623,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 115496844, guid: a7465bbb96f2bc84a824ad8daa25fd47, type: 3}
-      propertyPath: gunCD
-      value: 0.65
-      objectReference: {fileID: 0}
+    - target: {fileID: 1726239222, guid: a7465bbb96f2bc84a824ad8daa25fd47, type: 3}
+      propertyPath: overFill
+      value: 
+      objectReference: {fileID: 414747807}
     - target: {fileID: 1937488518727372449, guid: a7465bbb96f2bc84a824ad8daa25fd47,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2708,16 +2686,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 1937488518727372460, guid: a7465bbb96f2bc84a824ad8daa25fd47,
-        type: 3}
-      propertyPath: jumpRememberTime
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1937488518727372460, guid: a7465bbb96f2bc84a824ad8daa25fd47,
-        type: 3}
-      propertyPath: playerMask.m_Bits
-      value: 1591
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a7465bbb96f2bc84a824ad8daa25fd47, type: 3}
