@@ -37,9 +37,16 @@ public class GameMaster : MonoBehaviour
     public FlyEnemy[] enFly;
     public GroundColored[] colGround;
 
+    void Start()
+    {
 
+    }
     void Update()
     {
+        bolas = FindObjectsOfType<BouncingBall>();
+        enGround = FindObjectsOfType<EnemyGround>();
+        enFly = FindObjectsOfType<FlyEnemy>();
+        colGround = FindObjectsOfType<GroundColored>();
         if (destroyThem)
         {
             foreach (GameObject butao in GameObject.FindGameObjectsWithTag("BD"))

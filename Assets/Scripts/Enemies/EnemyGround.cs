@@ -9,6 +9,8 @@ public class EnemyGround : MonoBehaviour
     [SerializeField] float point1, point2;
     [SerializeField] float waitTime = 1f;
     [SerializeField] float vel;
+    [SerializeField] int vida;
+    int shotCounter = 0;
     Rigidbody2D rb;
     float waitTimeSave;
     float dir1, dir2;
@@ -95,7 +97,13 @@ public class EnemyGround : MonoBehaviour
     {
         if (other.gameObject.tag == "Bullet")
         {
-            gameObject.SetActive(false);
+            Destroy(other.gameObject);
+            shotCounter++;
+            if (shotCounter == vida)
+            {
+                gameObject.SetActive(false);
+                //playdeathparticles
+            }
         }
     }
 }
