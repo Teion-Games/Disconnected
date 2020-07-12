@@ -14,6 +14,7 @@ public class SwitchBehav : MonoBehaviour
     Color colorOn, colorOff, color2On, color2Off;
     GameMaster gm;
     public int wichColor;
+    [SerializeField] Sprite spriteOff, spriteOn;
 
 
     void Start()
@@ -62,10 +63,12 @@ public class SwitchBehav : MonoBehaviour
                 {
                     if (balls.isEnabled)
                     {
+                        GetComponent<SpriteRenderer>().sprite = spriteOn;
                         GetComponent<SpriteRenderer>().color = colorOn;
                     }
                     else
                     {
+                        GetComponent<SpriteRenderer>().sprite = spriteOff;
                         GetComponent<SpriteRenderer>().color = colorOff;
                     }
                     break;
@@ -90,7 +93,7 @@ public class SwitchBehav : MonoBehaviour
                 }
             }
         }
-        
+
         if (canInteract && input.inputActions.PlayerControls.Interact.triggered)
         {
             AudioManager.instance.PlaySound("Activate");
