@@ -19,7 +19,10 @@ public class GameMaster : MonoBehaviour
         }
     }
     #endregion
+
+    [SerializeField]
     private Vector3 lastCheckPointPos;
+
     public Vector3 _lastCheckPointPos { get { return lastCheckPointPos; } set { lastCheckPointPos = value; } }
     private int _controllerLevel = 0;
     public int controllerLevel { get { return _controllerLevel; } set { _controllerLevel = value; } }

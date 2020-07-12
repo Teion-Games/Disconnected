@@ -3078,6 +3078,21 @@ PrefabInstance:
       propertyPath: colGround.Array.data[2]
       value: 
       objectReference: {fileID: 1959035058663820150}
+    - target: {fileID: 4709079930368363813, guid: eb9343e53b783f6498bbac688b61334f,
+        type: 3}
+      propertyPath: lastCheckPointPos.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4709079930368363813, guid: eb9343e53b783f6498bbac688b61334f,
+        type: 3}
+      propertyPath: lastCheckPointPos.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4709079930368363813, guid: eb9343e53b783f6498bbac688b61334f,
+        type: 3}
+      propertyPath: lastCheckPointPos.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4709079930368363814, guid: eb9343e53b783f6498bbac688b61334f,
         type: 3}
       propertyPath: m_Name
