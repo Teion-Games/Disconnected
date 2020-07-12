@@ -15,6 +15,10 @@ public class HudController : MonoBehaviour
 
     void Start()
     {
+        foreach (var item in collection)
+        {
+            
+        }
         gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameMaster>();
         playerScript = FindObjectOfType<Player>();
     }
@@ -43,16 +47,34 @@ public class HudController : MonoBehaviour
                 rightFields[0].GetComponent<SpriteRenderer>().color = Color.green;
                 rightFields[1].GetComponent<TextMeshProUGUI>().color = Color.green;
                 rightFields[2].GetComponent<TextMeshProUGUI>().color = Color.green;
+                upFields[0].GetComponent<SpriteRenderer>().color = Color.white;
+                upFields[1].GetComponent<TextMeshProUGUI>().color = Color.white;
+                upFields[2].GetComponent<TextMeshProUGUI>().color = Color.white;
+                downFields[0].GetComponent<SpriteRenderer>().color = Color.white;
+                downFields[1].GetComponent<TextMeshProUGUI>().color = Color.white;
+                downFields[2].GetComponent<TextMeshProUGUI>().color = Color.white;
+                leftFields[0].GetComponent<SpriteRenderer>().color = Color.white;
+                leftFields[1].GetComponent<TextMeshProUGUI>().color = Color.white;
+                leftFields[2].GetComponent<TextMeshProUGUI>().color = Color.white;
                 break;
             case 1:
                 upFields[0].GetComponent<SpriteRenderer>().color = Color.green;
                 upFields[1].GetComponent<TextMeshProUGUI>().color = Color.green;
                 upFields[2].GetComponent<TextMeshProUGUI>().color = Color.green;
+                downFields[0].GetComponent<SpriteRenderer>().color = Color.white;
+                downFields[1].GetComponent<TextMeshProUGUI>().color = Color.white;
+                downFields[2].GetComponent<TextMeshProUGUI>().color = Color.white;
+                leftFields[0].GetComponent<SpriteRenderer>().color = Color.white;
+                leftFields[1].GetComponent<TextMeshProUGUI>().color = Color.white;
+                leftFields[2].GetComponent<TextMeshProUGUI>().color = Color.white;
                 break;
             case 2:
                 downFields[0].GetComponent<SpriteRenderer>().color = Color.green;
                 downFields[1].GetComponent<TextMeshProUGUI>().color = Color.green;
                 downFields[2].GetComponent<TextMeshProUGUI>().color = Color.green;
+                leftFields[0].GetComponent<SpriteRenderer>().color = Color.white;
+                leftFields[1].GetComponent<TextMeshProUGUI>().color = Color.white;
+                leftFields[2].GetComponent<TextMeshProUGUI>().color = Color.white;
                 break;
             case 3:
                 leftFields[0].GetComponent<SpriteRenderer>().color = Color.green;
