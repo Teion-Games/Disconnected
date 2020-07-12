@@ -12,6 +12,7 @@ public class EnemyGround : MonoBehaviour
     [SerializeField] int vida;
     int shotCounter = 0;
     Rigidbody2D rb;
+    bool facingRight = true;
     float waitTimeSave;
     float dir1, dir2;
     bool patrol = true;
@@ -56,6 +57,14 @@ public class EnemyGround : MonoBehaviour
         Vector2 moveVel = rb.velocity;
         moveVel.x = dir1 * vel;
         rb.velocity = moveVel;
+        if (dir1 < 0 && facingRight)
+        {
+            Flip();
+        }
+        else if (dir1 > 0 && !facingRight)
+        {
+            Flip();
+        }
         if (Mathf.Abs(point1 - transform.position.x) <= 0.4)
         {
             rb.velocity = new Vector2(0f, 0f);
@@ -77,6 +86,14 @@ public class EnemyGround : MonoBehaviour
         Vector2 moveVel = rb.velocity;
         moveVel.x = dir2 * vel;
         rb.velocity = moveVel;
+        if (dir2 < 0 && facingRight)
+        {
+            Flip();
+        }
+        else if (dir2 > 0 && !facingRight)
+        {
+            Flip();
+        }
         if (Mathf.Abs(point2 - transform.position.x) <= 0.4)
         {
             rb.velocity = new Vector2(0f, 0f);
@@ -105,5 +122,11 @@ public class EnemyGround : MonoBehaviour
                 //playdeathparticles
             }
         }
+    }
+
+    void Flip()
+    {
+        facingRight = !facingRight;
+        transform.Rotate(0f, 180f, 0f);
     }
 }
