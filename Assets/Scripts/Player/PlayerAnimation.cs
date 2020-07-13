@@ -26,11 +26,11 @@ public class PlayerAnimation : MonoBehaviour
             anim.SetBool("Moving", true);
         } else anim.SetBool("Moving", false);
 
-        if(rb.velocity.y>0)
+        if(rb.velocity.y>0.05)
         {
             anim.SetBool("Jumping", true);
             anim.SetBool("Falling", false);
-        } else if(rb.velocity.y<0)
+        } else if(rb.velocity.y<-0.05)
         {
             anim.SetBool("Jumping", false);
             anim.SetBool("Falling", true);

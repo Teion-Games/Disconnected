@@ -10,6 +10,7 @@ public class HudController : MonoBehaviour
     [SerializeField] TMP_Text upText, downText, leftText, rightText;
     [SerializeField] GameObject[] rightFields, upFields, downFields, leftFields, spaceFields;
     [SerializeField] GameObject overflowObj;
+    [SerializeField] TMP_Text deathCounterText;
 
     PlayerOverflow overflow;
     Player playerScript;
@@ -27,6 +28,7 @@ public class HudController : MonoBehaviour
     void Update()
     {
         overflowObj.SetActive(overflow.canOverflow);
+        deathCounterText.text = "DEATHS: " + gm.deathCounter.ToString();
         switch (playerScript.currentController)
         {
             case 1:

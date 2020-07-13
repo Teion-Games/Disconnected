@@ -117,7 +117,7 @@ public class SwitchBehav : MonoBehaviour
                     }
                     else balls.gameObject.GetComponent<SpriteRenderer>().color = colorOff;
                 }
-                else
+                else if(!(balls.gameObject.layer == 0))
                 {
                     balls.isEnabled = false;
                     balls.gameObject.GetComponent<SpriteRenderer>().color = color2Off;
@@ -134,7 +134,7 @@ public class SwitchBehav : MonoBehaviour
                     }
                     else balls.gameObject.GetComponent<SpriteRenderer>().color = color2Off;
                 }
-                else
+                else if(!(balls.gameObject.layer == 0))
                 {
                     balls.isEnabled = false;
                     balls.gameObject.GetComponent<SpriteRenderer>().color = colorOff;

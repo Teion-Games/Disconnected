@@ -27,4 +27,9 @@ public class MainMenu : MonoBehaviour
     {
         Application.Quit();
     }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        SceneManager.LoadScene(gameScene);
+    }
 }
