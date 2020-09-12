@@ -5,7 +5,7 @@ using UnityEngine;
 public class GameMaster : MonoBehaviour
 {
     #region Singleton
-    private static GameMaster instance;
+    public static GameMaster instance;
     void Awake()
     {
         if (instance == null)
@@ -37,7 +37,7 @@ public class GameMaster : MonoBehaviour
     public EnemyGround[] enGround;
     public FlyEnemy[] enFly;
     public GroundColored[] colGround;
-    public GameObject particleDestroy;
+    public GameObject particleDestroy, particleOverflow, particleDestroyEnemy;
     public List<GameObject> dialogList = new List<GameObject>();
     void Start()
     {

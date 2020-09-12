@@ -38,6 +38,7 @@ public class PlayerOverflow : MonoBehaviour
             {
                 AudioManager.instance.PlaySound("Overflow");
                 overflowAmount = 0;
+                GameObject overflow = Instantiate(GameMaster.instance.particleOverflow, transform.position, Quaternion.identity);
                 playerScript.currentController = Randomize(playerScript.currentController);
             }
         }

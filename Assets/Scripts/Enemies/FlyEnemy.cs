@@ -99,7 +99,7 @@ public class FlyEnemy : MonoBehaviour
             shotCounter++;
             if (shotCounter == vida)
             {
-                GameObject destroy = Instantiate(gm.particleDestroy, transform.position, Quaternion.identity);
+                GameObject destroy = Instantiate(gm.particleDestroyEnemy, transform.position, Quaternion.identity);
                 destroy.GetComponent<ParticleSystem>().Play();
                 gameObject.SetActive(false);
             }
