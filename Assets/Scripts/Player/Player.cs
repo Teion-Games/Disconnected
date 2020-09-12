@@ -27,7 +27,7 @@ public class Player : MonoBehaviour
         if (other.gameObject.tag == "Enemy" && !isDed)
         {
             isDed = true;
-            GameObject destroy = Instantiate(gm.particleDestroy, transform.position, Quaternion.identity);
+            GameObject destroy = Instantiate(gm.particleDestroy, new Vector3(transform.position.x, transform.position.y+1f, transform.position.z), Quaternion.identity);
             destroy.GetComponent<ParticleSystem>().Play();
             Destroy(GetComponent<SpriteRenderer>());
             Destroy(GetComponent<PlayerMovment>());

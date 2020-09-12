@@ -4,14 +4,16 @@ using UnityEngine;
 
 public class PlayerAnimation : MonoBehaviour
 {
-    Animator anim;
+    public Animator anim;
     PlayerInput input;
     private GameMaster gm;
     Rigidbody2D rb;
     GunBehav gun;
     PlayerMovment playermov;
+    DialogManager dialog;
     void Start()
     {
+        dialog = FindObjectOfType<DialogManager>();
         playermov = GetComponent<PlayerMovment>();
         gun = GetComponent<GunBehav>();
         rb = GetComponent<Rigidbody2D>();
@@ -23,7 +25,7 @@ public class PlayerAnimation : MonoBehaviour
     
     void Update()
     {
-        if(input.movH!=0)
+        if(input.movH!=0 && !dialog.isDialog)
         {
             anim.SetBool("Moving", true);
         } else anim.SetBool("Moving", false);
@@ -32,7 +34,7 @@ public class PlayerAnimation : MonoBehaviour
         {
             anim.SetBool("Jumping", true);
             anim.SetBool("Falling", false);
-        } else if(anim.GetBool("Jumping") && rb.velocity.y<-0.05)
+        } else if(rb.velocity.y<-0.05)
         {
             anim.SetBool("Jumping", false);
             anim.SetBool("Falling", true);

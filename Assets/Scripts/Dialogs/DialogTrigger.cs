@@ -22,7 +22,10 @@ public class DialogTrigger : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D col)
 	{
-		TriggerDialog();
+		if(col.tag == "Player")
+		{
+			TriggerDialog();
+		}
 	}
 	public void TriggerDialog()
 	{
