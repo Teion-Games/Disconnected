@@ -31,6 +31,7 @@ public class Player : MonoBehaviour
             destroy.GetComponent<ParticleSystem>().Play();
             Destroy(GetComponent<SpriteRenderer>());
             Destroy(GetComponent<PlayerMovment>());
+            _playerRB.velocity = new Vector3(0f,0f,0f);
             Invoke("ResetScene", 1f);
         }
     }

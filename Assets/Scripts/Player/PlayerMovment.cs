@@ -6,7 +6,9 @@ public class PlayerMovment : MonoBehaviour
 {
     [Header("Variaveis de velocidade e pulo")]
     [SerializeField] float jumpVel=10;
+    public float _jumpVel {get {return jumpVel;} set  {jumpVel = value;} }
     [SerializeField] float vel=10;
+    public float _speed {get {return vel;} set  {vel = value;} }
     [SerializeField] private float fallMultiplier=2.5f;
 	[SerializeField] private float lowJumpMultiplier=2f;
     Player playerScript;

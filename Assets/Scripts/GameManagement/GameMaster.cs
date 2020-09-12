@@ -38,10 +38,13 @@ public class GameMaster : MonoBehaviour
     public FlyEnemy[] enFly;
     public GroundColored[] colGround;
     public GameObject particleDestroy;
-
+    public List<GameObject> dialogList = new List<GameObject>();
     void Start()
     {
-
+        foreach (GameObject dialog in dialogList)
+        {
+            dialog.SetActive(true);
+        }
     }
     void Update()
     {
