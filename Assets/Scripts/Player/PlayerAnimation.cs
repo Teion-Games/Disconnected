@@ -9,8 +9,10 @@ public class PlayerAnimation : MonoBehaviour
     private GameMaster gm;
     Rigidbody2D rb;
     GunBehav gun;
+    PlayerMovment playermov;
     void Start()
     {
+        playermov = GetComponent<PlayerMovment>();
         gun = GetComponent<GunBehav>();
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
@@ -30,11 +32,11 @@ public class PlayerAnimation : MonoBehaviour
         {
             anim.SetBool("Jumping", true);
             anim.SetBool("Falling", false);
-        } else if(rb.velocity.y<-0.05)
+        } else if(anim.GetBool("Jumping") && rb.velocity.y<-0.05)
         {
             anim.SetBool("Jumping", false);
             anim.SetBool("Falling", true);
-        } else if (rb.velocity.y == 0)
+        } else if (playermov.isGround)
         {
             anim.SetBool("Falling", false);
         }

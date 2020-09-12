@@ -8,11 +8,13 @@ public class Player : MonoBehaviour
     int _currentController;
     Rigidbody2D _playerRB;
     private GameMaster gm;
+    bool isDed;
 
     public Rigidbody2D playerRB { get { return _playerRB; } set { _playerRB = value; } }
     public int currentController { get { return _currentController; } set { _currentController = value; } }
     void Start()
     {
+        isDed = false;
         Invoke("StartAudio", 0.1f);
         _playerRB = GetComponent<Rigidbody2D>();
         _currentController = 1;
@@ -22,13 +24,14 @@ public class Player : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.gameObject.tag == "Enemy")
+        if (other.gameObject.tag == "Enemy" && !isDed)
         {
+            isDed = true;
             GameObject destroy = Instantiate(gm.particleDestroy, transform.position, Quaternion.identity);
             destroy.GetComponent<ParticleSystem>().Play();
             Destroy(GetComponent<SpriteRenderer>());
-            Destroy(GetComponent<Collider2D>());
-            Invoke("ResetScene", 0.3f);
+            Destroy(GetComponent<PlayerMovment>());
+            Invoke("ResetScene", 1f);
         }
     }
 

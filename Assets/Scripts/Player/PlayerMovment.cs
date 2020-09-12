@@ -23,6 +23,7 @@ public class PlayerMovment : MonoBehaviour
     Transform tagGround;
     [SerializeField] private LayerMask playerMask;
     bool _isJumping, _isGround;
+    public bool isGround {get {return _isGround;} }
     bool facingRight=true;
     
     void Start()
