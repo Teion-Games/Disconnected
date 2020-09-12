@@ -19,6 +19,7 @@ public class Checkpoint : MonoBehaviour {
 			gm._lastCheckPointPos = transform.position;
 			gm.destroyThem = isDestroy;  
 			gm.isFirst = isFirst;
+			Destroy(gameObject);
 		}
 	}
 }

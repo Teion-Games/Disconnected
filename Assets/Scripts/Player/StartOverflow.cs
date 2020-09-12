@@ -15,6 +15,7 @@ public class StartOverflow : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             playerO.canOverflow = true;
+            Destroy(gameObject);
         }
     }
 }
