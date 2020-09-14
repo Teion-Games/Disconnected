@@ -32,6 +32,30 @@ TextureImporter:
   - first:
       213: 2352158370399171884
     second: hiro-running-shooting_9
+  - first:
+      213: 6920556114973034531
+    second: hiro-running-shooting_0
+  - first:
+      213: 1910995282518166720
+    second: hiro-running-shooting_1
+  - first:
+      213: -319899614403251143
+    second: hiro-running-shooting_2
+  - first:
+      213: -2638980138260059447
+    second: hiro-running-shooting_3
+  - first:
+      213: -4453797441947856123
+    second: hiro-running-shooting_4
+  - first:
+      213: -3586853895931208338
+    second: hiro-running-shooting_5
+  - first:
+      213: 4311946145812958589
+    second: hiro-running-shooting_6
+  - first:
+      213: 346547297932679330
+    second: hiro-running-shooting_10
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -128,159 +152,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: hiro-running-shooting_0
-      rect:
-        serializedVersion: 2
-        x: 15
-        y: 35
-        width: 333
-        height: 356
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4160e09efa709bca0800000000000000
-      internalID: -6000756576383793644
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: hiro-running-shooting_1
-      rect:
-        serializedVersion: 2
-        x: 392
-        y: 21
-        width: 324
-        height: 367
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ebafafcc8027bb230800000000000000
-      internalID: 3655640904665594558
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: hiro-running-shooting_2
-      rect:
-        serializedVersion: 2
-        x: 782
-        y: 13
-        width: 299
-        height: 374
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a24c9ac41b6673140800000000000000
-      internalID: 4699337647865840682
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: hiro-running-shooting_3
-      rect:
-        serializedVersion: 2
-        x: 1152
-        y: 15
-        width: 297
-        height: 372
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 76a10c18111981e10800000000000000
-      internalID: 2168642724956215911
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: hiro-running-shooting_4
-      rect:
-        serializedVersion: 2
-        x: 1483
-        y: 37
-        width: 342
-        height: 361
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 60c929e999d6787c0800000000000000
-      internalID: -4069163231748121594
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: hiro-running-shooting_5
-      rect:
-        serializedVersion: 2
-        x: 1843
-        y: 84
-        width: 353
-        height: 321
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e28b7614aed917b10800000000000000
-      internalID: 1977535340837582894
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: hiro-running-shooting_6
-      rect:
-        serializedVersion: 2
-        x: 2205
-        y: 91
-        width: 358
-        height: 312
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: df18b0a25aa77f000800000000000000
-      internalID: 69659169041121789
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: hiro-running-shooting_7
       rect:
         serializedVersion: 2
-        x: 2587
-        y: 42
-        width: 346
+        x: 2247
+        y: 350
+        width: 321
         height: 350
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -299,10 +176,10 @@ TextureImporter:
       name: hiro-running-shooting_8
       rect:
         serializedVersion: 2
-        x: 2976
-        y: 22
-        width: 320
-        height: 366
+        x: 0
+        y: 0
+        width: 321
+        height: 350
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -320,10 +197,10 @@ TextureImporter:
       name: hiro-running-shooting_9
       rect:
         serializedVersion: 2
-        x: 3373
-        y: 3
-        width: 285
-        height: 383
+        x: 321
+        y: 0
+        width: 321
+        height: 350
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -333,6 +210,153 @@ TextureImporter:
       bones: []
       spriteID: c25ba1b539b84a020800000000000000
       internalID: 2352158370399171884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hiro-running-shooting_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 350
+        width: 321
+        height: 350
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3280021be11ca0060800000000000000
+      internalID: 6920556114973034531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hiro-running-shooting_1
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 350
+        width: 321
+        height: 350
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cc41f5a518358a10800000000000000
+      internalID: 1910995282518166720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hiro-running-shooting_2
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 350
+        width: 321
+        height: 350
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 934b5bfdefc7f8bf0800000000000000
+      internalID: -319899614403251143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hiro-running-shooting_3
+      rect:
+        serializedVersion: 2
+        x: 963
+        y: 350
+        width: 321
+        height: 350
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9caa2b1db85706bd0800000000000000
+      internalID: -2638980138260059447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hiro-running-shooting_4
+      rect:
+        serializedVersion: 2
+        x: 1284
+        y: 350
+        width: 321
+        height: 350
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5039723e2dee032c0800000000000000
+      internalID: -4453797441947856123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hiro-running-shooting_5
+      rect:
+        serializedVersion: 2
+        x: 1605
+        y: 350
+        width: 321
+        height: 350
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6d5bc7b26fe83ec0800000000000000
+      internalID: -3586853895931208338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hiro-running-shooting_6
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 350
+        width: 321
+        height: 350
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7dcbc78c2c17db30800000000000000
+      internalID: 4311946145812958589
       vertices: []
       indices: 
       edges: []

@@ -152,6 +152,7 @@ public class BossBehav : MonoBehaviour
     }
     void EndGame()
     {
+        AchievmentsManager.instance.ManageAchievments();
         SceneManager.LoadScene("Fim");
     }
 }

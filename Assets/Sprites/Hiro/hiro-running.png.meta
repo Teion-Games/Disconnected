@@ -32,6 +32,30 @@ TextureImporter:
   - first:
       213: 1295430771271446905
     second: hiro-running_9
+  - first:
+      213: -4057697293013093913
+    second: hiro-running_0
+  - first:
+      213: -6747905499997597354
+    second: hiro-running_1
+  - first:
+      213: -8723803935534570623
+    second: hiro-running_2
+  - first:
+      213: 2696537422161521270
+    second: hiro-running_3
+  - first:
+      213: -5244697428405069196
+    second: hiro-running_4
+  - first:
+      213: 7094018713950050323
+    second: hiro-running_5
+  - first:
+      213: -762202726622581708
+    second: hiro-running_6
+  - first:
+      213: -4836469746174548157
+    second: hiro-running_10
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -128,160 +152,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: hiro-running_0
-      rect:
-        serializedVersion: 2
-        x: 13
-        y: 35
-        width: 334
-        height: 356
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f94226a0691ddc250800000000000000
-      internalID: 5966655523685278879
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: hiro-running_1
-      rect:
-        serializedVersion: 2
-        x: 352
-        y: 21
-        width: 333
-        height: 367
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: eafcb0403a6305cc0800000000000000
-      internalID: -3724416818059948114
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: hiro-running_2
-      rect:
-        serializedVersion: 2
-        x: 704
-        y: 13
-        width: 307
-        height: 373
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 89bc25561aa7112d0800000000000000
-      internalID: -3309729417532355688
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: hiro-running_3
-      rect:
-        serializedVersion: 2
-        x: 1077
-        y: 15
-        width: 240
-        height: 373
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 26b10612582ddb600800000000000000
-      internalID: 485775804058311522
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: hiro-running_4
-      rect:
-        serializedVersion: 2
-        x: 1412
-        y: 36
-        width: 224
-        height: 362
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fd6ddc46edd258e40800000000000000
-      internalID: 5657978940058097375
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: hiro-running_5
-      rect:
-        serializedVersion: 2
-        x: 1751
-        y: 84
-        width: 297
-        height: 321
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 20305ec47668e5890800000000000000
-      internalID: -7467383353903873278
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: hiro-running_6
-      rect:
-        serializedVersion: 2
-        x: 2091
-        y: 91
-        width: 324
-        height: 312
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: aaa295e466154bde0800000000000000
-      internalID: -1318339291069732182
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: hiro-running_7
       rect:
         serializedVersion: 2
-        x: 2454
-        y: 42
-        width: 285
-        height: 351
+        x: 2163
+        y: 350
+        width: 309
+        height: 350
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -299,10 +176,10 @@ TextureImporter:
       name: hiro-running_8
       rect:
         serializedVersion: 2
-        x: 2821
-        y: 23
-        width: 246
-        height: 365
+        x: 0
+        y: 0
+        width: 309
+        height: 350
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -320,10 +197,10 @@ TextureImporter:
       name: hiro-running_9
       rect:
         serializedVersion: 2
-        x: 3197
-        y: 3
-        width: 181
-        height: 383
+        x: 309
+        y: 0
+        width: 309
+        height: 350
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -333,6 +210,153 @@ TextureImporter:
       bones: []
       spriteID: 971beb84c6b4af110800000000000000
       internalID: 1295430771271446905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hiro-running_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 350
+        width: 309
+        height: 350
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e1f3e38fc920b7c0800000000000000
+      internalID: -4057697293013093913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hiro-running_1
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 350
+        width: 309
+        height: 350
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6511dbe13bf9a52a0800000000000000
+      internalID: -6747905499997597354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hiro-running_2
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 350
+        width: 309
+        height: 350
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 183ae449a82dee680800000000000000
+      internalID: -8723803935534570623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hiro-running_3
+      rect:
+        serializedVersion: 2
+        x: 927
+        y: 350
+        width: 309
+        height: 350
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67a2c73af760c6520800000000000000
+      internalID: 2696537422161521270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hiro-running_4
+      rect:
+        serializedVersion: 2
+        x: 1236
+        y: 350
+        width: 309
+        height: 350
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47ad289f9771737b0800000000000000
+      internalID: -5244697428405069196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hiro-running_5
+      rect:
+        serializedVersion: 2
+        x: 1545
+        y: 350
+        width: 309
+        height: 350
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31857f24f64037260800000000000000
+      internalID: 7094018713950050323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hiro-running_6
+      rect:
+        serializedVersion: 2
+        x: 1854
+        y: 350
+        width: 309
+        height: 350
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43ca3d098ac1c65f0800000000000000
+      internalID: -762202726622581708
       vertices: []
       indices: 
       edges: []

@@ -32,6 +32,33 @@ TextureImporter:
   - first:
       213: 8142994442281322861
     second: hiro-jumping-shooting_9
+  - first:
+      213: -8480431346894719666
+    second: hiro-jumping-shooting_0
+  - first:
+      213: 1523642218518788107
+    second: hiro-jumping-shooting_1
+  - first:
+      213: 2705226743011315993
+    second: hiro-jumping-shooting_2
+  - first:
+      213: -6862614311578534614
+    second: hiro-jumping-shooting_3
+  - first:
+      213: -8501726392381160258
+    second: hiro-jumping-shooting_4
+  - first:
+      213: -2160081692043776438
+    second: hiro-jumping-shooting_5
+  - first:
+      213: 1054165640299994064
+    second: hiro-jumping-shooting_6
+  - first:
+      213: -3415483935196359522
+    second: hiro-jumping-shooting_7
+  - first:
+      213: -2707830233646660113
+    second: hiro-jumping-shooting_10
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -128,181 +155,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: hiro-jumping-shooting_0
-      rect:
-        serializedVersion: 2
-        x: 24
-        y: 20
-        width: 260
-        height: 379
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 632d799961a1851a0800000000000000
-      internalID: -6820672951284149706
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: hiro-jumping-shooting_1
-      rect:
-        serializedVersion: 2
-        x: 325
-        y: 13
-        width: 258
-        height: 379
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a64ef3c787058df60800000000000000
-      internalID: 8059280011590362218
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: hiro-jumping-shooting_2
-      rect:
-        serializedVersion: 2
-        x: 620
-        y: 4
-        width: 268
-        height: 394
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d985ef24d0beeb520800000000000000
-      internalID: 2719869667169425565
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: hiro-jumping-shooting_3
-      rect:
-        serializedVersion: 2
-        x: 930
-        y: 10
-        width: 265
-        height: 405
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 194d85c51b0654300800000000000000
-      internalID: 235700870381622417
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: hiro-jumping-shooting_4
-      rect:
-        serializedVersion: 2
-        x: 1211
-        y: 44
-        width: 288
-        height: 379
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4effe5f6a4b4f1d20800000000000000
-      internalID: 3251400239052947428
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: hiro-jumping-shooting_5
-      rect:
-        serializedVersion: 2
-        x: 1540
-        y: 30
-        width: 261
-        height: 391
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1013f804dc947f4a0800000000000000
-      internalID: -6559693186341588735
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: hiro-jumping-shooting_6
-      rect:
-        serializedVersion: 2
-        x: 1841
-        y: 2
-        width: 261
-        height: 407
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5df0ff68994f2a7d0800000000000000
-      internalID: -2908493469095882795
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: hiro-jumping-shooting_7
-      rect:
-        serializedVersion: 2
-        x: 2143
-        y: 8
-        width: 261
-        height: 385
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 735b7b76a643c1600800000000000000
-      internalID: 440284495186736439
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: hiro-jumping-shooting_8
       rect:
         serializedVersion: 2
-        x: 2444
-        y: 20
-        width: 260
-        height: 369
+        x: 0
+        y: 0
+        width: 334
+        height: 474
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -320,10 +179,10 @@ TextureImporter:
       name: hiro-jumping-shooting_9
       rect:
         serializedVersion: 2
-        x: 2745
-        y: 17
-        width: 259
-        height: 376
+        x: 334
+        y: 0
+        width: 334
+        height: 474
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -333,6 +192,174 @@ TextureImporter:
       bones: []
       spriteID: d6988244d4ab10170800000000000000
       internalID: 8142994442281322861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hiro-jumping-shooting_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 474
+        width: 334
+        height: 474
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e45b04a0f947f4a80800000000000000
+      internalID: -8480431346894719666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hiro-jumping-shooting_1
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 474
+        width: 334
+        height: 474
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b08b99f6680152510800000000000000
+      internalID: 1523642218518788107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hiro-jumping-shooting_2
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 474
+        width: 334
+        height: 474
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 911931ec365ea8520800000000000000
+      internalID: 2705226743011315993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hiro-jumping-shooting_3
+      rect:
+        serializedVersion: 2
+        x: 1002
+        y: 474
+        width: 334
+        height: 474
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2d79dfa4a813c0a0800000000000000
+      internalID: -6862614311578534614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hiro-jumping-shooting_4
+      rect:
+        serializedVersion: 2
+        x: 1336
+        y: 474
+        width: 334
+        height: 474
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb4ce84e3ecc30a80800000000000000
+      internalID: -8501726392381160258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hiro-jumping-shooting_5
+      rect:
+        serializedVersion: 2
+        x: 1670
+        y: 474
+        width: 334
+        height: 474
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4ee7eb4529d502e0800000000000000
+      internalID: -2160081692043776438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hiro-jumping-shooting_6
+      rect:
+        serializedVersion: 2
+        x: 2004
+        y: 474
+        width: 334
+        height: 474
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dbd08c801621ae00800000000000000
+      internalID: 1054165640299994064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hiro-jumping-shooting_7
+      rect:
+        serializedVersion: 2
+        x: 2338
+        y: 474
+        width: 334
+        height: 474
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e94519af473c990d0800000000000000
+      internalID: -3415483935196359522
       vertices: []
       indices: 
       edges: []

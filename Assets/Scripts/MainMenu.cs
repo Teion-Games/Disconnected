@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
     [SerializeField] private string gameScene;
-    [SerializeField] private string creditScene;
     GameMaster gm;
 
     void Start()
@@ -15,14 +14,9 @@ public class MainMenu : MonoBehaviour
         AudioManager.instance.PlaySound("Menu");
     }
 
-    public void Play()
+    public void LoadSceneFunc(string sceneName)
     {
-        SceneManager.LoadScene(gameScene);
-    }
-
-    public void Credits()
-    {
-        SceneManager.LoadScene(creditScene);
+        SceneManager.LoadScene(sceneName);
     }
 
     public void QuitGame()
@@ -35,7 +29,7 @@ public class MainMenu : MonoBehaviour
         gm._lastCheckPointPos = new Vector3(0f,0f,0f);
         gm.controllerLevel = 0;
         gm.deathCounter = 0;
-        Play();
+        LoadSceneFunc("Tutorial");
     }
 
     void OnTriggerEnter2D(Collider2D other)

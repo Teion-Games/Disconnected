@@ -32,6 +32,27 @@ TextureImporter:
   - first:
       213: -8851635037923821507
     second: hiro-jumping_9
+  - first:
+      213: 7813035675062120530
+    second: hiro-jumping_0
+  - first:
+      213: -5773796144946379889
+    second: hiro-jumping_1
+  - first:
+      213: 1117314790671502796
+    second: hiro-jumping_2
+  - first:
+      213: 3204213327941890226
+    second: hiro-jumping_3
+  - first:
+      213: 1547742016115067428
+    second: hiro-jumping_4
+  - first:
+      213: -1970844109839308805
+    second: hiro-jumping_5
+  - first:
+      213: -773009177573100050
+    second: hiro-jumping_10
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -128,139 +149,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: hiro-jumping_0
-      rect:
-        serializedVersion: 2
-        x: 113
-        y: 18
-        width: 185
-        height: 383
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b450b9be998687680800000000000000
-      internalID: -8757134465129839285
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: hiro-jumping_1
-      rect:
-        serializedVersion: 2
-        x: 488
-        y: 11
-        width: 242
-        height: 382
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 720b17726a54785b0800000000000000
-      internalID: -5366243851060006873
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: hiro-jumping_2
-      rect:
-        serializedVersion: 2
-        x: 838
-        y: 3
-        width: 318
-        height: 396
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 61cebfbf40f4989a0800000000000000
-      internalID: -6230361726664315882
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: hiro-jumping_3
-      rect:
-        serializedVersion: 2
-        x: 1201
-        y: 9
-        width: 362
-        height: 405
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ae62a64c11c04c8d0800000000000000
-      internalID: -2827121395632560406
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: hiro-jumping_4
-      rect:
-        serializedVersion: 2
-        x: 1616
-        y: 42
-        width: 345
-        height: 382
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 02c106bc44f467d70800000000000000
-      internalID: 9040500458881293344
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: hiro-jumping_5
-      rect:
-        serializedVersion: 2
-        x: 2009
-        y: 30
-        width: 365
-        height: 392
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e1a61807e118e9840800000000000000
-      internalID: 5232761784787626526
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: hiro-jumping_6
       rect:
         serializedVersion: 2
-        x: 2442
-        y: 1
-        width: 329
-        height: 409
+        x: 2004
+        y: 474
+        width: 334
+        height: 474
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -278,10 +173,10 @@ TextureImporter:
       name: hiro-jumping_7
       rect:
         serializedVersion: 2
-        x: 2887
-        y: 7
-        width: 246
-        height: 386
+        x: 2338
+        y: 474
+        width: 334
+        height: 474
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -299,10 +194,10 @@ TextureImporter:
       name: hiro-jumping_8
       rect:
         serializedVersion: 2
-        x: 3300
-        y: 19
-        width: 194
-        height: 370
+        x: 0
+        y: 0
+        width: 334
+        height: 474
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -320,10 +215,10 @@ TextureImporter:
       name: hiro-jumping_9
       rect:
         serializedVersion: 2
-        x: 3694
-        y: 17
-        width: 188
-        height: 378
+        x: 334
+        y: 0
+        width: 334
+        height: 474
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -333,6 +228,132 @@ TextureImporter:
       bones: []
       spriteID: d38362bb4dca82580800000000000000
       internalID: -8851635037923821507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hiro-jumping_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 474
+        width: 334
+        height: 474
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 250388d1d8a7d6c60800000000000000
+      internalID: 7813035675062120530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hiro-jumping_1
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 474
+        width: 334
+        height: 474
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8383fe3ffa5fdfa0800000000000000
+      internalID: -5773796144946379889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hiro-jumping_2
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 474
+        width: 334
+        height: 474
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccdc340e1ef718f00800000000000000
+      internalID: 1117314790671502796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hiro-jumping_3
+      rect:
+        serializedVersion: 2
+        x: 1002
+        y: 474
+        width: 334
+        height: 474
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b07c8c8b07a77c20800000000000000
+      internalID: 3204213327941890226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hiro-jumping_4
+      rect:
+        serializedVersion: 2
+        x: 1336
+        y: 474
+        width: 334
+        height: 474
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42a4c72d92faa7510800000000000000
+      internalID: 1547742016115067428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hiro-jumping_5
+      rect:
+        serializedVersion: 2
+        x: 1670
+        y: 474
+        width: 334
+        height: 474
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf76b5d59b726a4e0800000000000000
+      internalID: -1970844109839308805
       vertices: []
       indices: 
       edges: []

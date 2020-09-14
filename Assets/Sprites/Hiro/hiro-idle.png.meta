@@ -32,6 +32,39 @@ TextureImporter:
   - first:
       213: 3176506283083938941
     second: hiro-idle_9
+  - first:
+      213: -4133198126431533470
+    second: hiro-idle_0
+  - first:
+      213: 1002357515301203134
+    second: hiro-idle_1
+  - first:
+      213: 8943251823153765990
+    second: hiro-idle_2
+  - first:
+      213: 1259893815488275088
+    second: hiro-idle_3
+  - first:
+      213: 8030248228477211854
+    second: hiro-idle_4
+  - first:
+      213: 5461378698958208813
+    second: hiro-idle_5
+  - first:
+      213: 4834835966332187101
+    second: hiro-idle_6
+  - first:
+      213: -7529436129492520177
+    second: hiro-idle_7
+  - first:
+      213: -7917025174209763449
+    second: hiro-idle_8
+  - first:
+      213: 4377967938219009025
+    second: hiro-idle_9
+  - first:
+      213: 3677765500808260833
+    second: hiro-idle_10
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -131,10 +164,10 @@ TextureImporter:
       name: hiro-idle_0
       rect:
         serializedVersion: 2
-        x: 12
-        y: 2
-        width: 184
-        height: 379
+        x: 0
+        y: 357
+        width: 245
+        height: 357
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -142,8 +175,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4bf550d05498931c0800000000000000
-      internalID: -4523433421052747852
+      spriteID: 2660dbfd33ee3a6c0800000000000000
+      internalID: -4133198126431533470
       vertices: []
       indices: 
       edges: []
@@ -152,10 +185,10 @@ TextureImporter:
       name: hiro-idle_1
       rect:
         serializedVersion: 2
-        x: 207
-        y: 2
-        width: 181
-        height: 379
+        x: 245
+        y: 357
+        width: 245
+        height: 357
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -163,8 +196,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ccd898cacf8b1ce20800000000000000
-      internalID: 3369177391615806924
+      spriteID: ebca87579d619ed00800000000000000
+      internalID: 1002357515301203134
       vertices: []
       indices: 
       edges: []
@@ -173,10 +206,10 @@ TextureImporter:
       name: hiro-idle_2
       rect:
         serializedVersion: 2
-        x: 403
-        y: 2
-        width: 178
-        height: 378
+        x: 490
+        y: 357
+        width: 245
+        height: 357
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,8 +217,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f00758040d8f45fe0800000000000000
-      internalID: -1201061627281706993
+      spriteID: 66ed1f75620dc1c70800000000000000
+      internalID: 8943251823153765990
       vertices: []
       indices: 
       edges: []
@@ -194,10 +227,10 @@ TextureImporter:
       name: hiro-idle_3
       rect:
         serializedVersion: 2
-        x: 599
-        y: 2
-        width: 174
-        height: 378
+        x: 735
+        y: 357
+        width: 245
+        height: 357
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -205,8 +238,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b189d088b6ec978c0800000000000000
-      internalID: -4000939832702560229
+      spriteID: 092e3eeffba0c7110800000000000000
+      internalID: 1259893815488275088
       vertices: []
       indices: 
       edges: []
@@ -215,10 +248,10 @@ TextureImporter:
       name: hiro-idle_4
       rect:
         serializedVersion: 2
-        x: 795
-        y: 2
-        width: 171
-        height: 377
+        x: 980
+        y: 357
+        width: 245
+        height: 357
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -226,8 +259,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 43668ebf4b9b76ea0800000000000000
-      internalID: -5879526601537329612
+      spriteID: ec4189cb73c217f60800000000000000
+      internalID: 8030248228477211854
       vertices: []
       indices: 
       edges: []
@@ -236,10 +269,10 @@ TextureImporter:
       name: hiro-idle_5
       rect:
         serializedVersion: 2
-        x: 991
-        y: 2
-        width: 167
-        height: 376
+        x: 1225
+        y: 357
+        width: 245
+        height: 357
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -247,8 +280,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1c65224bb6b0c0fe0800000000000000
-      internalID: -1221588841712691519
+      spriteID: d2ff947bdf6bacb40800000000000000
+      internalID: 5461378698958208813
       vertices: []
       indices: 
       edges: []
@@ -257,10 +290,10 @@ TextureImporter:
       name: hiro-idle_6
       rect:
         serializedVersion: 2
-        x: 1187
-        y: 2
-        width: 170
-        height: 376
+        x: 1470
+        y: 357
+        width: 245
+        height: 357
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -268,8 +301,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7d57f49cd2b058ce0800000000000000
-      internalID: -1403703417577179689
+      spriteID: dd1338002b9c81340800000000000000
+      internalID: 4834835966332187101
       vertices: []
       indices: 
       edges: []
@@ -278,10 +311,10 @@ TextureImporter:
       name: hiro-idle_7
       rect:
         serializedVersion: 2
-        x: 1383
-        y: 2
-        width: 173
-        height: 378
+        x: 1715
+        y: 357
+        width: 245
+        height: 357
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -289,8 +322,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1b43ce56f5a6de3d0800000000000000
-      internalID: -3175765204261915471
+      spriteID: f033b9e9bb1128790800000000000000
+      internalID: -7529436129492520177
       vertices: []
       indices: 
       edges: []
@@ -299,10 +332,10 @@ TextureImporter:
       name: hiro-idle_8
       rect:
         serializedVersion: 2
-        x: 1579
-        y: 2
-        width: 177
-        height: 378
+        x: 0
+        y: 0
+        width: 245
+        height: 357
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -310,8 +343,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8e1cda679d80ad2d0800000000000000
-      internalID: -3253278050729737752
+      spriteID: 787e66ddc83112290800000000000000
+      internalID: -7917025174209763449
       vertices: []
       indices: 
       edges: []
@@ -320,10 +353,10 @@ TextureImporter:
       name: hiro-idle_9
       rect:
         serializedVersion: 2
-        x: 1775
-        y: 2
-        width: 180
-        height: 379
+        x: 245
+        y: 0
+        width: 245
+        height: 357
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -331,8 +364,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d7cb30672a7351c20800000000000000
-      internalID: 3176506283083938941
+      spriteID: 104e793f4aaa1cc30800000000000000
+      internalID: 4377967938219009025
       vertices: []
       indices: 
       edges: []

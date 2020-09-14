@@ -12,6 +12,7 @@ public class Player : MonoBehaviour
 
     public Rigidbody2D playerRB { get { return _playerRB; } set { _playerRB = value; } }
     public int currentController { get { return _currentController; } set { _currentController = value; } }
+    
     void Start()
     {
         isDed = false;

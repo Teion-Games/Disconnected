@@ -39,15 +39,18 @@ public class GameMaster : MonoBehaviour
     public GroundColored[] colGround;
     public GameObject particleDestroy, particleOverflow, particleDestroyEnemy;
     public List<GameObject> dialogList = new List<GameObject>();
+
     void Start()
     {
-        foreach (GameObject dialog in dialogList)
-        {
-            dialog.SetActive(true);
-        }
+        
     }
     void Update()
     {
+         foreach (GameObject dialog in dialogList)
+        {
+            dialog.SetActive(true);
+        }
+        
         bolas = FindObjectsOfType<BouncingBall>();
         enGround = FindObjectsOfType<EnemyGround>();
         enFly = FindObjectsOfType<FlyEnemy>();

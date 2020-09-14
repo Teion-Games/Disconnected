@@ -4,6 +4,12 @@ using UnityEngine;
 
 public class DialogTrigger : MonoBehaviour {
 	
+	#region Singleton
+    void Awake()
+    {  
+        DontDestroyOnLoad(gameObject);
+    }
+    #endregion
 	[Tooltip("Aqui você escreve as sentenças que deseja que o npc fale e o nome dele enois")]
 	[SerializeField]
 	private Dialogue dialog;
@@ -30,6 +36,7 @@ public class DialogTrigger : MonoBehaviour {
 	public void TriggerDialog()
 	{
 		FindObjectOfType<DialogManager>().StartDialog(_dialog, portrait);
+		gameObject.SetActive(false);
 		RemoveDialog();
 	}
 

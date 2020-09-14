@@ -32,6 +32,54 @@ TextureImporter:
   - first:
       213: 3841181859418715794
     second: hiro-idle-shooting_9
+  - first:
+      213: 3545129303270570217
+    second: hiro-idle-shooting_0
+  - first:
+      213: 5851699861690201941
+    second: hiro-idle-shooting_1
+  - first:
+      213: -5799610892483110088
+    second: hiro-idle-shooting_2
+  - first:
+      213: -3414945345497990134
+    second: hiro-idle-shooting_3
+  - first:
+      213: 3958787378588935471
+    second: hiro-idle-shooting_4
+  - first:
+      213: 4552394867284284496
+    second: hiro-idle-shooting_5
+  - first:
+      213: -4632523503631032081
+    second: hiro-idle-shooting_6
+  - first:
+      213: 92336401962624961
+    second: hiro-idle-shooting_7
+  - first:
+      213: -3104960957852697502
+    second: hiro-idle-shooting_10
+  - first:
+      213: 6826799301536450559
+    second: hiro-idle-shooting_11
+  - first:
+      213: 2434492397404901709
+    second: hiro-idle-shooting_12
+  - first:
+      213: 1776895643602689284
+    second: hiro-idle-shooting_13
+  - first:
+      213: 2754578336564423463
+    second: hiro-idle-shooting_14
+  - first:
+      213: 5176985180329924826
+    second: hiro-idle-shooting_15
+  - first:
+      213: 1814703570822484679
+    second: hiro-idle-shooting_16
+  - first:
+      213: -5736422687214207013
+    second: hiro-idle-shooting_17
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -128,181 +176,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: hiro-idle-shooting_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 1
-        width: 260
-        height: 377
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2400ee6ff4e83cb90800000000000000
-      internalID: -7222772903275790270
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: hiro-idle-shooting_1
-      rect:
-        serializedVersion: 2
-        x: 267
-        y: 1
-        width: 260
-        height: 377
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 635fe6f50b5073a50800000000000000
-      internalID: 6500670842206090550
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: hiro-idle-shooting_2
-      rect:
-        serializedVersion: 2
-        x: 533
-        y: 1
-        width: 262
-        height: 377
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2c83a6058783a1d00800000000000000
-      internalID: 944129161283909826
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: hiro-idle-shooting_3
-      rect:
-        serializedVersion: 2
-        x: 800
-        y: 1
-        width: 262
-        height: 377
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d469c8bc2f9de2cc0800000000000000
-      internalID: -3733807404223261107
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: hiro-idle-shooting_4
-      rect:
-        serializedVersion: 2
-        x: 1067
-        y: 1
-        width: 261
-        height: 377
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9e30317381d3b19a0800000000000000
-      internalID: -6261343682716040215
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: hiro-idle-shooting_5
-      rect:
-        serializedVersion: 2
-        x: 1334
-        y: 1
-        width: 261
-        height: 377
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 951b82bbc4c6ee800800000000000000
-      internalID: 643570873573880153
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: hiro-idle-shooting_6
-      rect:
-        serializedVersion: 2
-        x: 1602
-        y: 1
-        width: 260
-        height: 377
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 70d4c89c3bcf6bce0800000000000000
-      internalID: -1389645585886458617
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: hiro-idle-shooting_7
-      rect:
-        serializedVersion: 2
-        x: 1868
-        y: 1
-        width: 262
-        height: 377
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f9ac52e043038bf40800000000000000
-      internalID: 5744394324844858015
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: hiro-idle-shooting_8
       rect:
         serializedVersion: 2
-        x: 2135
-        y: 1
-        width: 262
-        height: 377
+        x: 0
+        y: 0
+        width: 282
+        height: 325
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -320,10 +200,10 @@ TextureImporter:
       name: hiro-idle-shooting_9
       rect:
         serializedVersion: 2
-        x: 2402
-        y: 1
-        width: 268
-        height: 377
+        x: 282
+        y: 0
+        width: 282
+        height: 325
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -333,6 +213,174 @@ TextureImporter:
       bones: []
       spriteID: 296b358bc8e9e4530800000000000000
       internalID: 3841181859418715794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hiro-idle-shooting_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 325
+        width: 282
+        height: 325
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e835448154d23130800000000000000
+      internalID: 3545129303270570217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hiro-idle-shooting_1
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 325
+        width: 282
+        height: 325
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5573f34450a653150800000000000000
+      internalID: 5851699861690201941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hiro-idle-shooting_2
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 325
+        width: 282
+        height: 325
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83bde06fe94a38fa0800000000000000
+      internalID: -5799610892483110088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hiro-idle-shooting_3
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 325
+        width: 282
+        height: 325
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0cf73a2d4dab90d0800000000000000
+      internalID: -3414945345497990134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hiro-idle-shooting_4
+      rect:
+        serializedVersion: 2
+        x: 1128
+        y: 325
+        width: 282
+        height: 325
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f25e712752070f630800000000000000
+      internalID: 3958787378588935471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hiro-idle-shooting_5
+      rect:
+        serializedVersion: 2
+        x: 1410
+        y: 325
+        width: 282
+        height: 325
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0549acd130b5d2f30800000000000000
+      internalID: 4552394867284284496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hiro-idle-shooting_6
+      rect:
+        serializedVersion: 2
+        x: 1692
+        y: 325
+        width: 282
+        height: 325
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe0ac68ea68f5bfb0800000000000000
+      internalID: -4632523503631032081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hiro-idle-shooting_7
+      rect:
+        serializedVersion: 2
+        x: 1974
+        y: 325
+        width: 282
+        height: 325
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c7e1d6e77b084100800000000000000
+      internalID: 92336401962624961
       vertices: []
       indices: 
       edges: []
