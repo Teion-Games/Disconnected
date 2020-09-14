@@ -6,9 +6,18 @@ public class EnableButtons : MonoBehaviour
     PlayerInput input;
     [SerializeField] GameObject interactCanvas;
     bool canInteract = false;
+    [SerializeField] bool isNewScene;
     void Start()
     {
         input = FindObjectOfType<PlayerInput>();
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if(other.gameObject.tag=="Player" && isNewScene)
+        {
+            FindObjectOfType<GameMaster>().controllerLevel = controllerNext;
+        }
     }
     void OnTriggerStay2D(Collider2D other)
     {

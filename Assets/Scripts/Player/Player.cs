@@ -26,23 +26,33 @@ public class Player : MonoBehaviour
     {
         if (other.gameObject.tag == "Enemy" && !isDed)
         {
-            isDed = true;
-            GameObject destroy = Instantiate(gm.particleDestroy, new Vector3(transform.position.x, transform.position.y+1f, transform.position.z), Quaternion.identity);
-            destroy.GetComponent<ParticleSystem>().Play();
-            Destroy(GetComponent<SpriteRenderer>());
-            Destroy(GetComponent<PlayerMovment>());
-            _playerRB.velocity = new Vector3(0f,0f,0f);
-            Invoke("ResetScene", 1f);
+            Die();
         }
     }
 
     void OnTriggerEnter2D(Collider2D other)
     {
+        if(other.gameObject.tag == "Enemy" && !isDed)
+        {
+            Die();
+        }
+
         if (other.gameObject.tag == "ShowText")
         {
             gm.showText = false;
             Destroy(other.gameObject);
         }
+    }
+
+    void Die()
+    {
+        isDed = true;
+        GameObject destroy = Instantiate(gm.particleDestroy, new Vector3(transform.position.x, transform.position.y+1f, transform.position.z), Quaternion.identity);
+        destroy.GetComponent<ParticleSystem>().Play();
+        Destroy(GetComponent<SpriteRenderer>());
+        Destroy(GetComponent<PlayerMovment>());
+        _playerRB.velocity = new Vector3(0f,0f,0f);
+        Invoke("ResetScene", 1f);
     }
 
     void StartAudio()

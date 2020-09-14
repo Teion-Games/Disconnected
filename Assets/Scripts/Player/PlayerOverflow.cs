@@ -10,12 +10,13 @@ public class PlayerOverflow : MonoBehaviour
     PlayerInput input;
     public bool canOverflow { get { return _canOverflow; } set { _canOverflow = value; } }
     [SerializeField] Image overFill;
+    [SerializeField] GameObject breakImage;
     [SerializeField] float vel;
     [SerializeField] float shotMult;
     Player playerScript;
     [SerializeField] int lastController = 3;
     int toChange = -1;
-
+    public bool overBreak = false;
     void Start()
     {
         input = GetComponent<PlayerInput>();
@@ -28,7 +29,15 @@ public class PlayerOverflow : MonoBehaviour
     {
         if (_canOverflow)
         {
-            overFill.fillAmount = overflowAmount;
+            if(overBreak)
+            {
+                breakImage.SetActive(true);
+            }
+            else 
+            {
+                overFill.fillAmount = overflowAmount;
+            }
+            
 
             if (input.movH != 0 || input.jumpTrig || input.fallTrig)
             {

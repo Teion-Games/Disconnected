@@ -43,5 +43,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f18b307ff4bd8214ea9685252bb5f7ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lastCheckPointPos: {x: 0, y: 0, z: 0}
   destroyThem: 0
   isFirst: 0
+  color1On: {r: 1, g: 0, b: 0, a: 1}
+  color1Off: {r: 0.2735849, g: 0.0038714774, b: 0.0038714774, a: 1}
+  color2On: {r: 0, g: 0.81564665, b: 1, a: 1}
+  color2Off: {r: 0, g: 0.31254822, b: 0.3773585, a: 1}
+  bolas: []
+  enGround: []
+  enFly: []
+  colGround: []
+  particleDestroy: {fileID: 4999379543475546834, guid: 6f11c38d46197994a89b02980cf7d427,
+    type: 3}
+  particleOverflow: {fileID: 0}
+  particleDestroyEnemy: {fileID: 0}
+  dialogList:
+  - {fileID: 0}
+  - {fileID: 0}

@@ -138,11 +138,11 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_GravityScale: 5
+  m_Material: {fileID: 6200000, guid: bb5a0abc0d4b9e145912ce9a37321c08, type: 2}
   m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!114 &1937488518727372461
 MonoBehaviour:
@@ -180,15 +180,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3607962a7c7faaf42bb9bbe7f5d4e71e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpVel: 10
-  vel: 10
-  fallMultiplier: 2.5
-  lowJumpMultiplier: 2
-  jumpRememberTime: 0.2
+  jumpVel: 24
+  vel: 16
+  fallMultiplier: 10
+  lowJumpMultiplier: 5
+  jumpRememberTime: 0.1
   groundedRememberTime: 0.15
   playerMask:
     serializedVersion: 2
-    m_Bits: 1591
+    m_Bits: 7681
 --- !u!114 &115496844
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -202,7 +202,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bullet: {fileID: 8667858758929937616, guid: cd655d5369891554cbb4373bd3863b54, type: 3}
-  bulletSpeed: 20
+  bulletSpeed: 40
   gunCD: 0.65
   shooting: 0
 --- !u!95 &4604232755523679152
@@ -262,6 +262,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a8bc5c1438751c42b93bc365b9ac720, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anim: {fileID: 0}
 --- !u!114 &1726239222
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -275,7 +276,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   overFill: {fileID: 0}
-  vel: 40
+  breakImage: {fileID: 0}
+  vel: 20
   shotMult: 30
   lastController: 7
 --- !u!1 &1937488519176774884
