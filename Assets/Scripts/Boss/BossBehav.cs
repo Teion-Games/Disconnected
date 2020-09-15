@@ -23,6 +23,7 @@ public class BossBehav : MonoBehaviour
     [SerializeField] GameObject bullet;
     [SerializeField] float bulletSpeed;
     [SerializeField] GameObject blindScreen;
+    [SerializeField] GameObject shotParticle;
     Transform gunPoint;
     float health;
     bool isSecondPhase=false;
@@ -31,9 +32,13 @@ public class BossBehav : MonoBehaviour
     bool firstPhaseStarted = false;
     bool secondPhaseStarted = false;
     bool thirdPhaseStarted = false;
+    bool isfirstTeleport = true;
+    bool isfirstShoot = true;
+    Animator anim;
 
     void Start()
     {
+        anim = GetComponent<Animator>();
         playerGO = FindObjectOfType<Player>().gameObject;
         gunPoint =  GameObject.Find(this.name+"/gunPoint").transform;
         health=healthTotal;
@@ -112,9 +117,16 @@ public class BossBehav : MonoBehaviour
     {
         while (true)
         {
+            if(isfirstShoot)
+            {
+                yield return new WaitForSeconds(2f);
+                isfirstShoot = false;
+            }
             for(int i=0;i<5;i++)
             {
                 yield return new WaitForSeconds(0.5f);
+                GameObject particle = Instantiate(shotParticle, gunPoint.position, Quaternion.identity);
+                particle.GetComponent<ParticleSystem>().Play();
                 GameObject bulleto = Instantiate(bullet, gunPoint.position, Quaternion.identity);
                 bulleto.GetComponent<Rigidbody2D>().velocity = gunPoint.forward * bulletSpeed;
             }
@@ -126,6 +138,13 @@ public class BossBehav : MonoBehaviour
     {
         while (true)
         {
+            if(isfirstTeleport)
+            {
+                yield return new WaitForSeconds(2f);
+                isfirstTeleport = false;
+            }
+            anim.SetTrigger("teleport");
+            yield return new WaitForSeconds(0.2f);
             for(;;)
             {
                 int i = Random.Range(0, positionsToTeleport.Length);

@@ -10,6 +10,7 @@ public class GunBehav : MonoBehaviour
     [SerializeField] float gunCD = 2f;
     float savegunCD;
     public bool shooting = false;
+    [SerializeField] GameObject shotParticle;
     void Start()
     {
         savegunCD = gunCD;
@@ -31,6 +32,8 @@ public class GunBehav : MonoBehaviour
         {
             AudioManager.instance.PlaySound("Fire");
             GameObject shot = Instantiate(bullet, gunPoint.position, Quaternion.identity);
+            GameObject particle = Instantiate(shotParticle, gunPoint.position, Quaternion.identity);
+            particle.GetComponent<ParticleSystem>().Play();
             shot.GetComponent<Rigidbody2D>().velocity = transform.TransformDirection(Vector3.right * bulletSpeed);
             gunCD = savegunCD;
             GetComponent<PlayerOverflow>().ShotIncrement();
