@@ -11,7 +11,10 @@ public class MainMenu : MonoBehaviour
     void Start()
     {
         gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameMaster>();
-        AudioManager.instance.PlaySound("Menu");
+        if(AudioManager.instance!=null)
+        {
+            AudioManager.instance.PlaySound("Menu");
+        }
     }
 
     public void LoadSceneFunc(string sceneName)
