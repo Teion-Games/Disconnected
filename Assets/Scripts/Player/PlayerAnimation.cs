@@ -38,7 +38,7 @@ public class PlayerAnimation : MonoBehaviour
         {
             anim.SetBool("Jumping", false);
             anim.SetBool("Falling", true);
-        } else if (playermov.isGround)
+        } else if (playermov.isGround || rb.velocity.y==0)
         {
             anim.SetBool("Falling", false);
         }

@@ -28,7 +28,7 @@ public class HudController : MonoBehaviour
     void Update()
     {
         overflowObj.SetActive(overflow.canOverflow);
-        deathCounterText.text = "DEATHS: " + gm.deathCounter.ToString();
+        deathCounterText.text = "Mortes: " + gm.deathCounter.ToString();
         switch (playerScript.currentController)
         {
             case 1:

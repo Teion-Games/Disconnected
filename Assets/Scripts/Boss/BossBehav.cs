@@ -36,6 +36,10 @@ public class BossBehav : MonoBehaviour
     bool isfirstShoot = true;
     Animator anim;
 
+    void Awake()
+    {
+
+    }
     void Start()
     {
         anim = GetComponent<Animator>();

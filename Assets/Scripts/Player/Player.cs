@@ -52,6 +52,8 @@ public class Player : MonoBehaviour
         destroy.GetComponent<ParticleSystem>().Play();
         Destroy(GetComponent<SpriteRenderer>());
         Destroy(GetComponent<PlayerMovment>());
+        _playerRB.isKinematic=true;
+        gameObject.GetComponent<Collider2D>().isTrigger=true;
         _playerRB.velocity = new Vector3(0f,0f,0f);
         Invoke("ResetScene", 1f);
     }
