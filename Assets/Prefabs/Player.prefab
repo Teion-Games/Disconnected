@@ -65,7 +65,7 @@ Transform:
   m_GameObject: {fileID: 1937488518727372451}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.3, y: 1.3, z: 1}
   m_Children:
   - {fileID: 1937488519176774883}
   - {fileID: 1361927321}
@@ -90,7 +90,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: ddac12967331fa74998b36bb75e9ecc6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -237,18 +237,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.027910918, y: 1.8300726}
+  m_Offset: {x: 0.027910918, y: 1.6701092}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
-    oldSize: {x: 1.84, y: 3.79}
+    oldSize: {x: 2.45, y: 3.57}
     newSize: {x: 0.2, y: 0.2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.87421495, y: 3.400434}
+  m_Size: {x: 0.87421495, y: 3.080507}
   m_EdgeRadius: 0
 --- !u!114 &3762670959706487894
 MonoBehaviour:
@@ -280,6 +280,7 @@ MonoBehaviour:
   vel: 20
   shotMult: 30
   lastController: 7
+  overBreak: 0
 --- !u!1 &1937488519176774884
 GameObject:
   m_ObjectHideFlags: 0

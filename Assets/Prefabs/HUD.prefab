@@ -218,7 +218,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'DEATHS: XX'
+  m_text: 'Mortes: XX'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c844de3c54038354f9e6a04d665686ce, type: 2}
   m_sharedMaterial: {fileID: -6306464024697003533, guid: c844de3c54038354f9e6a04d665686ce,
@@ -608,7 +608,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Fire
+  m_text: Atirar
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c844de3c54038354f9e6a04d665686ce, type: 2}
   m_sharedMaterial: {fileID: -6306464024697003533, guid: c844de3c54038354f9e6a04d665686ce,
@@ -678,7 +678,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 593326270}
-    characterCount: 4
+    characterCount: 6
     spriteCount: 0
     spaceCount: 0
     wordCount: 1
@@ -1459,7 +1459,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 82
+  m_SortingOrder: 400
   m_TargetDisplay: 0
 --- !u!114 &1205624013677530454
 MonoBehaviour:
@@ -1635,7 +1635,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Walk
+  m_text: Andar
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c844de3c54038354f9e6a04d665686ce, type: 2}
   m_sharedMaterial: {fileID: -6306464024697003533, guid: c844de3c54038354f9e6a04d665686ce,
@@ -1705,7 +1705,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1205624014029992605}
-    characterCount: 4
+    characterCount: 5
     spriteCount: 0
     spaceCount: 0
     wordCount: 1
@@ -1791,7 +1791,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Jump
+  m_text: Pular
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c844de3c54038354f9e6a04d665686ce, type: 2}
   m_sharedMaterial: {fileID: -6306464024697003533, guid: c844de3c54038354f9e6a04d665686ce,
@@ -1861,7 +1861,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1205624014297243643}
-    characterCount: 4
+    characterCount: 5
     spriteCount: 0
     spaceCount: 0
     wordCount: 1
@@ -2103,7 +2103,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Drop
+  m_text: Cair
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c844de3c54038354f9e6a04d665686ce, type: 2}
   m_sharedMaterial: {fileID: -6306464024697003533, guid: c844de3c54038354f9e6a04d665686ce,
@@ -2369,7 +2369,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Walk
+  m_text: Andar
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c844de3c54038354f9e6a04d665686ce, type: 2}
   m_sharedMaterial: {fileID: -6306464024697003533, guid: c844de3c54038354f9e6a04d665686ce,
@@ -2439,7 +2439,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1205624015064106070}
-    characterCount: 4
+    characterCount: 5
     spriteCount: 0
     spaceCount: 0
     wordCount: 1
@@ -3266,7 +3266,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 653.2, y: -425.9}
+  m_AnchoredPosition: {x: 619, y: -425.9}
   m_SizeDelta: {x: 720.1, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6939383031188236923
@@ -3295,7 +3295,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Press       to move forward.
+  m_text: "Aperte      para avan\xE7ar"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c844de3c54038354f9e6a04d665686ce, type: 2}
   m_sharedMaterial: {fileID: -6306464024697003533, guid: c844de3c54038354f9e6a04d665686ce,
@@ -3365,10 +3365,10 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: -372.02148, w: -77.67478}
   m_textInfo:
     textComponent: {fileID: 6939383031188236922}
-    characterCount: 28
+    characterCount: 24
     spriteCount: 0
-    spaceCount: 9
-    wordCount: 4
+    spaceCount: 7
+    wordCount: 3
     linkCount: 0
     lineCount: 1
     pageCount: 1
