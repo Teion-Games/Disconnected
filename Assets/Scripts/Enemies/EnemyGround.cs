@@ -11,7 +11,7 @@ public class EnemyGround : MonoBehaviour
     [SerializeField] int vida;
     int shotCounter = 0;
     Rigidbody2D rb;
-    bool facingRight = true;
+    bool facingRight = false;
     float dir1, dir2;
     bool patrol = true;
     public bool isEnabled;

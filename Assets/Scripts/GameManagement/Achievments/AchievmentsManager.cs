@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
 
 public class AchievmentsManager : MonoBehaviour
 {
@@ -20,41 +21,15 @@ public class AchievmentsManager : MonoBehaviour
         }
     }
     #endregion
-    void Start()
-    {
-        PlayerPrefs.SetInt("highlander", 0);
-        PlayerPrefs.SetInt("firstBlood", 0);
-        PlayerPrefs.SetInt("10mortes", 0);
-        PlayerPrefs.SetInt("50mortes", 0);
-        PlayerPrefs.SetInt("100mortes", 0);
-        PlayerPrefs.SetInt("300mortes", 0);
-        PlayerPrefs.SetInt("500mortes", 0);
-        PlayerPrefs.SetInt("1000mortes", 0);
-        PlayerPrefs.SetInt("1oOverflow", 0);
-        PlayerPrefs.SetInt("overflowKilled", 0);
-        PlayerPrefs.SetInt("allControlers", 0);
-        PlayerPrefs.SetInt("bronze", 0);
-        PlayerPrefs.SetInt("prata", 0);
-        PlayerPrefs.SetInt("ouro", 0);
-        PlayerPrefs.SetInt("platina", 0);
-        PlayerPrefs.SetInt("diamante", 0);
-        PlayerPrefs.SetInt("brilliant", 0);
-        PlayerPrefs.SetInt("todosAchievments", 0);
-    }
 
-    void Update()
-    {
-        if(SceneManager.GetActiveScene().name=="Achievments")
-        {
-            
-        }
-    }
+
     public void ManageAchievments()
     {
         
         // todos os controler fodase uaserhuasehru
         PlayerPrefs.SetInt("allControlers", 1);
         PlayerPrefs.SetInt("1oOverflow", 1);
+        PlayerPrefs.SetInt("overflowKilled", 1);
         //first blood e highlander
         if(GameMaster.instance.deathCounter>=1)
         {

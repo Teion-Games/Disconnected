@@ -38,6 +38,30 @@ TextureImporter:
   - first:
       213: 5263062009810243482
     second: orih_11
+  - first:
+      213: -463469961277289436
+    second: orih_0
+  - first:
+      213: 6580642919227897838
+    second: orih_1
+  - first:
+      213: 5163457745256685134
+    second: orih_2
+  - first:
+      213: -313268888089100352
+    second: orih_3
+  - first:
+      213: 8021342732352498290
+    second: orih_4
+  - first:
+      213: -4219713373123937627
+    second: orih_5
+  - first:
+      213: -5628990228066071825
+    second: orih_6
+  - first:
+      213: 2703432292905934514
+    second: orih_7
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -137,10 +161,10 @@ TextureImporter:
       name: orih_0
       rect:
         serializedVersion: 2
-        x: 16
-        y: 31
-        width: 262
-        height: 315
+        x: 0
+        y: 0
+        width: 307
+        height: 383
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -148,8 +172,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9226246d199af78a0800000000000000
-      internalID: -6305134509465378263
+      spriteID: 42cc00a968c6199f0800000000000000
+      internalID: -463469961277289436
       vertices: []
       indices: 
       edges: []
@@ -158,10 +182,10 @@ TextureImporter:
       name: orih_1
       rect:
         serializedVersion: 2
-        x: 313
-        y: 26
-        width: 283
-        height: 314
+        x: 307
+        y: 0
+        width: 307
+        height: 383
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -169,8 +193,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 222b65322146f3790800000000000000
-      internalID: -7548204421384588766
+      spriteID: ee7b44a8ed3235b50800000000000000
+      internalID: 6580642919227897838
       vertices: []
       indices: 
       edges: []
@@ -179,10 +203,10 @@ TextureImporter:
       name: orih_2
       rect:
         serializedVersion: 2
-        x: 629
-        y: 24
-        width: 272
-        height: 314
+        x: 614
+        y: 0
+        width: 307
+        height: 383
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -190,8 +214,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 848a3bdb96c3b1650800000000000000
-      internalID: 6204619336484890696
+      spriteID: e4e93ce467948a740800000000000000
+      internalID: 5163457745256685134
       vertices: []
       indices: 
       edges: []
@@ -200,10 +224,10 @@ TextureImporter:
       name: orih_3
       rect:
         serializedVersion: 2
-        x: 985
-        y: 12
-        width: 190
-        height: 332
+        x: 921
+        y: 0
+        width: 307
+        height: 383
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -211,8 +235,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aaa9c2a4cf6ff07d0800000000000000
-      internalID: -2949867667467756886
+      spriteID: 0cf74462b9b07abf0800000000000000
+      internalID: -313268888089100352
       vertices: []
       indices: 
       edges: []
@@ -221,10 +245,10 @@ TextureImporter:
       name: orih_4
       rect:
         serializedVersion: 2
-        x: 1292
-        y: 10
-        width: 152
-        height: 341
+        x: 1228
+        y: 0
+        width: 307
+        height: 383
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -232,8 +256,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9a0200f46ff54ad80800000000000000
-      internalID: -8240355906689163095
+      spriteID: 27a288757b8815f60800000000000000
+      internalID: 8021342732352498290
       vertices: []
       indices: 
       edges: []
@@ -242,10 +266,10 @@ TextureImporter:
       name: orih_5
       rect:
         serializedVersion: 2
-        x: 1598
+        x: 1535
         y: 0
-        width: 154
-        height: 354
+        width: 307
+        height: 383
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -253,8 +277,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 10aa969eee74678d0800000000000000
-      internalID: -2849010622821455359
+      spriteID: 5aa7bfc4b019075c0800000000000000
+      internalID: -4219713373123937627
       vertices: []
       indices: 
       edges: []
@@ -263,10 +287,10 @@ TextureImporter:
       name: orih_6
       rect:
         serializedVersion: 2
-        x: 1905
+        x: 1842
         y: 0
-        width: 192
-        height: 354
+        width: 307
+        height: 383
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -274,8 +298,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f8c0a168b7f3a5ce0800000000000000
-      internalID: -1415749333091218289
+      spriteID: fea0af3163fc1e1b0800000000000000
+      internalID: -5628990228066071825
       vertices: []
       indices: 
       edges: []
@@ -284,10 +308,10 @@ TextureImporter:
       name: orih_7
       rect:
         serializedVersion: 2
-        x: 2197
-        y: 28
-        width: 221
-        height: 320
+        x: 2149
+        y: 0
+        width: 307
+        height: 383
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -295,92 +319,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a762d41d87715d0c0800000000000000
-      internalID: -4551706040713009542
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: orih_8
-      rect:
-        serializedVersion: 2
-        x: 2493
-        y: 30
-        width: 231
-        height: 312
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7ec6cb3ba8389e370800000000000000
-      internalID: 8352351615679491303
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: orih_9
-      rect:
-        serializedVersion: 2
-        x: 2800
-        y: 26
-        width: 218
-        height: 309
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9613aaa9627118a80800000000000000
-      internalID: -8466460369908780695
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: orih_10
-      rect:
-        serializedVersion: 2
-        x: 3128
-        y: 1
-        width: 157
-        height: 339
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6692a87dff5625c80800000000000000
-      internalID: -8335487810802144922
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: orih_11
-      rect:
-        serializedVersion: 2
-        x: 3435
-        y: 26
-        width: 184
-        height: 322
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a9fc79553072a0940800000000000000
-      internalID: 5263062009810243482
+      spriteID: 2be5af4d855848520800000000000000
+      internalID: 2703432292905934514
       vertices: []
       indices: 
       edges: []
