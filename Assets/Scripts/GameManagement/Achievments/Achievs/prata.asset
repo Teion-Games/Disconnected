@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: prata
   m_EditorClassIdentifier: 
   name: "S\xF3 mais um pratinha"
-  icon: {fileID: 21300000, guid: 724e6fc1c6e36c04ebb32d3623224335, type: 3}
+  icon: {fileID: 21300000, guid: 90e7703e954ef6b40a292856c14cc1c0, type: 3}
   description: Zere o jogo com menos de 500 mortes

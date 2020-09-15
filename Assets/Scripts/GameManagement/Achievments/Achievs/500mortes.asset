@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: 500mortes
   m_EditorClassIdentifier: 
   name: "Ta vendo? nem d\xF3i mais"
-  icon: {fileID: 21300000, guid: 724e6fc1c6e36c04ebb32d3623224335, type: 3}
+  icon: {fileID: 21300000, guid: b9adf8ceaf24aab46adcbf668cd9bf94, type: 3}
   description: Morra 500 vezes
