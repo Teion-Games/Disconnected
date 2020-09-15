@@ -9,9 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 85f22501045691e47b4a0d7323c73fa8, type: 3}
-  m_Name: 300mortes
+  m_Script: {fileID: 11500000, guid: d7fd9488000d3734a9e00ee676215985, type: 3}
+  m_Name: Global Volume Profile
   m_EditorClassIdentifier: 
-  name: This is Sparta!
-  icon: {fileID: 21300000, guid: 360ec72ca2d6bc14c9c2eaed771f5606, type: 3}
-  description: Morra 300 vezes
+  components: []

@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: brilliant
   m_EditorClassIdentifier: 
   name: Brilhante!
-  icon: {fileID: 21300000, guid: 724e6fc1c6e36c04ebb32d3623224335, type: 3}
+  icon: {fileID: 21300000, guid: 2110633cbaad19c488b342b218f46549, type: 3}
   description: Zere o jogo com menos de 10 mortes
