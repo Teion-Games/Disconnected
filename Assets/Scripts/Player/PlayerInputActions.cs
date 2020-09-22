@@ -101,7 +101,7 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
                 {
                     ""name"": ""Move5"",
                     ""type"": ""Button"",
-                    ""id"": ""fd9a08bf-58ea-4756-8eef-516354a05be3"",
+                    ""id"": ""d33f119a-5443-4c69-9e4b-3065b3e095c1"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
@@ -109,7 +109,7 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
                 {
                     ""name"": ""JumpFall5"",
                     ""type"": ""Button"",
-                    ""id"": ""f2e47113-3db2-4419-aed4-7b044eb41c21"",
+                    ""id"": ""aecd5b9e-5f7d-4757-9c19-882f1301595e"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
@@ -117,7 +117,7 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
                 {
                     ""name"": ""Move6"",
                     ""type"": ""Button"",
-                    ""id"": ""31c8f467-508b-4716-afaa-6779c3d2e28c"",
+                    ""id"": ""a5dc2552-8039-47f3-8f48-eb93c76a35ba"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
@@ -125,7 +125,23 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
                 {
                     ""name"": ""JumpFall6"",
                     ""type"": ""Button"",
-                    ""id"": ""4dfd0322-cdf0-4651-b61c-4f53b3ab9a85"",
+                    ""id"": ""d35a1d30-1a9e-4123-93f4-95e508522e6e"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""Move7"",
+                    ""type"": ""Button"",
+                    ""id"": ""e2f72136-caa5-43ea-87d5-a6c32f2687dc"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""JumpFall7"",
+                    ""type"": ""Button"",
+                    ""id"": ""abc4c813-4d1b-4583-8b14-658f72c41cd3"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
@@ -420,7 +436,7 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
                 },
                 {
                     ""name"": ""1D Axis"",
-                    ""id"": ""fbc1ed11-c2fc-421f-af76-72ea41003f3c"",
+                    ""id"": ""cf087b83-31fc-4136-ba97-67db90a253b1"",
                     ""path"": ""1DAxis"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -431,8 +447,8 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
                 },
                 {
                     ""name"": ""negative"",
-                    ""id"": ""5bb6ac28-57b3-4685-9c93-203cab170ef5"",
-                    ""path"": ""<Keyboard>/z"",
+                    ""id"": ""65a47834-ffa1-44b0-88f4-9089345c2584"",
+                    ""path"": ""<Keyboard>/rightArrow"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -442,8 +458,8 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
                 },
                 {
                     ""name"": ""positive"",
-                    ""id"": ""e60b8fb2-594a-45c9-89e1-dbe51bd3cd9b"",
-                    ""path"": ""<Keyboard>/c"",
+                    ""id"": ""35274ee0-a5fb-43f5-a063-9aa84a815c1b"",
+                    ""path"": ""<Keyboard>/leftArrow"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -453,7 +469,7 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
                 },
                 {
                     ""name"": ""1D Axis"",
-                    ""id"": ""29b793c8-8863-45ab-9ff1-92fd21518f8c"",
+                    ""id"": ""287a34d3-607d-4e86-b5e7-b8e55df3e939"",
                     ""path"": ""1DAxis"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -464,8 +480,8 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
                 },
                 {
                     ""name"": ""negative"",
-                    ""id"": ""a7693743-23f3-40db-9c77-b7d344063ca0"",
-                    ""path"": ""<Keyboard>/x"",
+                    ""id"": ""f43d3369-453a-4a00-9622-cb6589746844"",
+                    ""path"": ""<Keyboard>/upArrow"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -475,8 +491,8 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
                 },
                 {
                     ""name"": ""positive"",
-                    ""id"": ""e35dbfc1-a1be-4cf8-af62-e95c7d345bc6"",
-                    ""path"": ""<Keyboard>/s"",
+                    ""id"": ""2d65f3af-eca6-4554-909e-552723629293"",
+                    ""path"": ""<Keyboard>/downArrow"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -486,7 +502,7 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
                 },
                 {
                     ""name"": ""1D Axis"",
-                    ""id"": ""f6615e92-64a4-4ea5-bff3-7a8fae0edab6"",
+                    ""id"": ""a664c376-28da-418c-8f19-9195ed83ec46"",
                     ""path"": ""1DAxis"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -497,8 +513,8 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
                 },
                 {
                     ""name"": ""negative"",
-                    ""id"": ""665a54b1-8fb0-4f37-97ad-d0998d5d1737"",
-                    ""path"": ""<Keyboard>/b"",
+                    ""id"": ""5b349250-e57a-4c17-ab3d-fc9028445505"",
+                    ""path"": ""<Keyboard>/leftArrow"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -508,8 +524,8 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
                 },
                 {
                     ""name"": ""positive"",
-                    ""id"": ""b3969ae4-940a-47c9-b518-36dcc025fe65"",
-                    ""path"": ""<Keyboard>/m"",
+                    ""id"": ""6304b050-23f7-4cb1-be7b-792207ed278d"",
+                    ""path"": ""<Keyboard>/rightArrow"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -519,7 +535,7 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
                 },
                 {
                     ""name"": ""1D Axis"",
-                    ""id"": ""14fe5af5-e00f-440c-a964-c1fd85f5df0f"",
+                    ""id"": ""f87a65a0-2755-4700-8a12-cedc77a5fda5"",
                     ""path"": ""1DAxis"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -530,8 +546,8 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
                 },
                 {
                     ""name"": ""negative"",
-                    ""id"": ""a0a524ca-41b9-40ea-a6bd-64c139f29434"",
-                    ""path"": ""<Keyboard>/n"",
+                    ""id"": ""6e854190-6331-44b1-81b9-f9f8f8e596e7"",
+                    ""path"": ""<Keyboard>/upArrow"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -541,12 +557,78 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
                 },
                 {
                     ""name"": ""positive"",
-                    ""id"": ""a341396d-631d-4f6b-a9a0-d633bb77dfc3"",
-                    ""path"": ""<Keyboard>/h"",
+                    ""id"": ""fa343889-ab92-4240-8c7a-e1b8a66710bc"",
+                    ""path"": ""<Keyboard>/downArrow"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""JumpFall6"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""1D Axis"",
+                    ""id"": ""6f532217-418a-49fe-bff0-39ce032a81c6"",
+                    ""path"": ""1DAxis"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move7"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""negative"",
+                    ""id"": ""79503ccb-c99d-4c53-9314-4f423c87345d"",
+                    ""path"": ""<Keyboard>/rightArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move7"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""positive"",
+                    ""id"": ""d709ebac-4251-429c-acbf-e16b79309a6a"",
+                    ""path"": ""<Keyboard>/leftArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move7"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""1D Axis"",
+                    ""id"": ""990555a5-82d1-4e3b-a187-bb7f8e773670"",
+                    ""path"": ""1DAxis"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""JumpFall7"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""negative"",
+                    ""id"": ""0e7b33cc-53e9-4a60-9f24-29009bb8fc6e"",
+                    ""path"": ""<Keyboard>/downArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""JumpFall7"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""positive"",
+                    ""id"": ""e1816016-aea9-4b4c-9c95-33b58962c640"",
+                    ""path"": ""<Keyboard>/upArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""JumpFall7"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 }
@@ -658,6 +740,8 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
         m_PlayerControls_JumpFall5 = m_PlayerControls.FindAction("JumpFall5", throwIfNotFound: true);
         m_PlayerControls_Move6 = m_PlayerControls.FindAction("Move6", throwIfNotFound: true);
         m_PlayerControls_JumpFall6 = m_PlayerControls.FindAction("JumpFall6", throwIfNotFound: true);
+        m_PlayerControls_Move7 = m_PlayerControls.FindAction("Move7", throwIfNotFound: true);
+        m_PlayerControls_JumpFall7 = m_PlayerControls.FindAction("JumpFall7", throwIfNotFound: true);
         // UI
         m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
         m_UI_Move = m_UI.FindAction("Move", throwIfNotFound: true);
@@ -726,6 +810,8 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
     private readonly InputAction m_PlayerControls_JumpFall5;
     private readonly InputAction m_PlayerControls_Move6;
     private readonly InputAction m_PlayerControls_JumpFall6;
+    private readonly InputAction m_PlayerControls_Move7;
+    private readonly InputAction m_PlayerControls_JumpFall7;
     public struct PlayerControlsActions
     {
         private @PlayerInputActions m_Wrapper;
@@ -744,6 +830,8 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
         public InputAction @JumpFall5 => m_Wrapper.m_PlayerControls_JumpFall5;
         public InputAction @Move6 => m_Wrapper.m_PlayerControls_Move6;
         public InputAction @JumpFall6 => m_Wrapper.m_PlayerControls_JumpFall6;
+        public InputAction @Move7 => m_Wrapper.m_PlayerControls_Move7;
+        public InputAction @JumpFall7 => m_Wrapper.m_PlayerControls_JumpFall7;
         public InputActionMap Get() { return m_Wrapper.m_PlayerControls; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -795,6 +883,12 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
                 @JumpFall6.started -= m_Wrapper.m_PlayerControlsActionsCallbackInterface.OnJumpFall6;
                 @JumpFall6.performed -= m_Wrapper.m_PlayerControlsActionsCallbackInterface.OnJumpFall6;
                 @JumpFall6.canceled -= m_Wrapper.m_PlayerControlsActionsCallbackInterface.OnJumpFall6;
+                @Move7.started -= m_Wrapper.m_PlayerControlsActionsCallbackInterface.OnMove7;
+                @Move7.performed -= m_Wrapper.m_PlayerControlsActionsCallbackInterface.OnMove7;
+                @Move7.canceled -= m_Wrapper.m_PlayerControlsActionsCallbackInterface.OnMove7;
+                @JumpFall7.started -= m_Wrapper.m_PlayerControlsActionsCallbackInterface.OnJumpFall7;
+                @JumpFall7.performed -= m_Wrapper.m_PlayerControlsActionsCallbackInterface.OnJumpFall7;
+                @JumpFall7.canceled -= m_Wrapper.m_PlayerControlsActionsCallbackInterface.OnJumpFall7;
             }
             m_Wrapper.m_PlayerControlsActionsCallbackInterface = instance;
             if (instance != null)
@@ -841,6 +935,12 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
                 @JumpFall6.started += instance.OnJumpFall6;
                 @JumpFall6.performed += instance.OnJumpFall6;
                 @JumpFall6.canceled += instance.OnJumpFall6;
+                @Move7.started += instance.OnMove7;
+                @Move7.performed += instance.OnMove7;
+                @Move7.canceled += instance.OnMove7;
+                @JumpFall7.started += instance.OnJumpFall7;
+                @JumpFall7.performed += instance.OnJumpFall7;
+                @JumpFall7.canceled += instance.OnJumpFall7;
             }
         }
     }
@@ -910,6 +1010,8 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
         void OnJumpFall5(InputAction.CallbackContext context);
         void OnMove6(InputAction.CallbackContext context);
         void OnJumpFall6(InputAction.CallbackContext context);
+        void OnMove7(InputAction.CallbackContext context);
+        void OnJumpFall7(InputAction.CallbackContext context);
     }
     public interface IUIActions
     {

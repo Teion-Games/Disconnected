@@ -55,18 +55,6 @@ public class HudController : MonoBehaviour
                 leftText.text = "J";
                 rightText.text = "L";
                 break;
-            case 5:
-                upText.text = "S";
-                downText.text = "X";
-                leftText.text = "Z";
-                rightText.text = "C";
-                break;
-            case 6:
-                upText.text = "H";
-                downText.text = "N";
-                leftText.text = "B";
-                rightText.text = "M";
-                break;
         }
         switch (gm.controllerLevel)
         {
