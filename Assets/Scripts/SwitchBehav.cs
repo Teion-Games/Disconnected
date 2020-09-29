@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class SwitchBehav : MonoBehaviour
 {
-    [SerializeField] BouncingBall[] bolas;
-    [SerializeField] EnemyGround[] enGround;
+    [SerializeField] EnemyPatrol[] enGround;
     [SerializeField] FlyEnemy[] enFly;
     [SerializeField] GroundColored[] colGround;
     bool canInteract = false;
@@ -51,47 +50,16 @@ public class SwitchBehav : MonoBehaviour
     void Update()
     {
 
-        bolas = gm.bolas;
         enGround = gm.enGround;
         enFly = gm.enFly;
         colGround = gm.colGround;
         if (wichColor == 1)
         {
-            foreach (BouncingBall balls in bolas)
-            {
-                if (balls.gameObject.layer == 9)
-                {
-                    if (balls.isEnabled)
-                    {
-                        GetComponent<SpriteRenderer>().sprite = spriteOn;
-                        GetComponent<SpriteRenderer>().color = colorOn;
-                    }
-                    else
-                    {
-                        GetComponent<SpriteRenderer>().sprite = spriteOff;
-                        GetComponent<SpriteRenderer>().color = colorOff;
-                    }
-                    break;
-                }
-            }
+            
         }
         else if (wichColor == 2)
         {
-            foreach (BouncingBall balls in bolas)
-            {
-                if (balls.gameObject.layer == 10)
-                {
-                    if (balls.isEnabled)
-                    {
-                        GetComponent<SpriteRenderer>().color = color2On;
-                    }
-                    else
-                    {
-                        GetComponent<SpriteRenderer>().color = color2Off;
-                    }
-                    break;
-                }
-            }
+            
         }
 
         if (canInteract && input.inputActions.PlayerControls.Interact.triggered)
@@ -103,46 +71,8 @@ public class SwitchBehav : MonoBehaviour
 
     void SwitchColors()
     {
-        foreach (BouncingBall balls in bolas)
-        {
-            if (wichColor == 1)
-            {
-                if (balls.gameObject.layer == 9)
-                {
-                    balls.isEnabled = !balls.isEnabled;
 
-                    if (balls.isEnabled)
-                    {
-                        balls.gameObject.GetComponent<SpriteRenderer>().color = colorOn;
-                    }
-                    else balls.gameObject.GetComponent<SpriteRenderer>().color = colorOff;
-                }
-                else if(!(balls.gameObject.layer == 0))
-                {
-                    balls.isEnabled = false;
-                    balls.gameObject.GetComponent<SpriteRenderer>().color = color2Off;
-                }
-            }
-            else if (wichColor == 2)
-            {
-                if (balls.gameObject.layer == 10)
-                {
-                    balls.isEnabled = !balls.isEnabled;
-                    if (balls.isEnabled)
-                    {
-                        balls.gameObject.GetComponent<SpriteRenderer>().color = color2On;
-                    }
-                    else balls.gameObject.GetComponent<SpriteRenderer>().color = color2Off;
-                }
-                else if(!(balls.gameObject.layer == 0))
-                {
-                    balls.isEnabled = false;
-                    balls.gameObject.GetComponent<SpriteRenderer>().color = colorOff;
-                }
-            }
-        }
-
-        foreach (EnemyGround ground in enGround)
+        foreach (EnemyPatrol ground in enGround)
         {
             if (wichColor == 1)
             {
@@ -276,28 +206,8 @@ public class SwitchBehav : MonoBehaviour
 
     void StartColors()
     {
-        foreach (BouncingBall balls in bolas)
-        {
-            if (balls.gameObject.layer == 9 && balls.isEnabled)
-            {
-                balls.gameObject.GetComponent<SpriteRenderer>().color = colorOn;
-            }
-            else if (balls.gameObject.layer == 9 && !balls.isEnabled)
-            {
-                balls.gameObject.GetComponent<SpriteRenderer>().color = colorOff;
-            }
 
-            if (balls.gameObject.layer == 10 && balls.isEnabled)
-            {
-                balls.gameObject.GetComponent<SpriteRenderer>().color = color2On;
-            }
-            else if (balls.gameObject.layer == 10 && !balls.isEnabled)
-            {
-                balls.gameObject.GetComponent<SpriteRenderer>().color = color2Off;
-            }
-        }
-
-        foreach (EnemyGround ground in enGround)
+        foreach (EnemyPatrol ground in enGround)
         {
             if (ground.gameObject.layer == 9 && ground.isEnabled)
             {

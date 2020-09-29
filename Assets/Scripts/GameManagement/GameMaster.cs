@@ -33,8 +33,7 @@ public class GameMaster : MonoBehaviour
     public bool showText { get { return _showText; } set { _showText = value; } }
     GameObject[] butaos;
     public Color color1On, color1Off, color2On, color2Off;
-    public BouncingBall[] bolas;
-    public EnemyGround[] enGround;
+    public EnemyPatrol[] enGround;
     public FlyEnemy[] enFly;
     public GroundColored[] colGround;
     public GameObject particleDestroy, particleOverflow, particleDestroyEnemy;
@@ -51,8 +50,7 @@ public class GameMaster : MonoBehaviour
             dialog.SetActive(true);
         }
         
-        bolas = FindObjectsOfType<BouncingBall>();
-        enGround = FindObjectsOfType<EnemyGround>();
+        enGround = FindObjectsOfType<EnemyPatrol>();
         enFly = FindObjectsOfType<FlyEnemy>();
         colGround = FindObjectsOfType<GroundColored>();
         if (destroyThem)
