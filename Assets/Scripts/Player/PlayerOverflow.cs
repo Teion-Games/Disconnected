@@ -14,7 +14,7 @@ public class PlayerOverflow : MonoBehaviour
     [SerializeField] float vel;
     [SerializeField] float shotMult;
     Player playerScript;
-    [SerializeField] int lastController = 4;
+    int lastController = 5;
     int toChange = -1;
     public bool overBreak = false;
     private int _overLevel = 0;

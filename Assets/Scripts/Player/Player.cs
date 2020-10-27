@@ -20,7 +20,10 @@ public class Player : MonoBehaviour
         _playerRB = GetComponent<Rigidbody2D>();
         _currentController = 1;
         gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameMaster>();
-        transform.position = gm._lastCheckPointPos;
+        //duas linhas para xitar o checkpoint system enquanto teste
+        PlayerPrefs.SetFloat("PosX", -17f);
+        PlayerPrefs.SetFloat("PosY", 3f);
+        transform.position = new Vector3(PlayerPrefs.GetFloat("PosX"), PlayerPrefs.GetFloat("PosY"), 0f);
     }
 
     void OnCollisionEnter2D(Collision2D other)

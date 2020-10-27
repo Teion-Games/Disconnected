@@ -19,9 +19,11 @@ public class EnemyPatrol : MonoBehaviour
     float dir1, dir2;
     bool patrol = true;
     public bool isEnabled;
+    public bool isFollowing;
     Collider2D col;
     Animator anim;
     private GameMaster gm;
+    bool isStoped = false;
     void Start()
     {
         waitTimeSave = waitTime;
@@ -42,15 +44,32 @@ public class EnemyPatrol : MonoBehaviour
     }
     void Update()
     {
-        anim.enabled = isEnabled;
-        rb.isKinematic = !isEnabled;
-        col.enabled = isEnabled;
+        if(isFollowing)
+        {
+            anim.enabled = true;
+            rb.isKinematic = false;
+            col.enabled = true;             
+        }
+        else
+        {
+            anim.enabled = isEnabled;
+            rb.isKinematic = !isEnabled;
+            col.enabled = isEnabled;
+        }
 
         if (isEnabled)
         {
             ControlPatrol();
+            isStoped = false;
         }
-        else rb.velocity = new Vector2(0, 0);
+        else 
+        {
+            if(!isStoped)
+            {
+                rb.velocity = new Vector2(0, 0);
+                isStoped = true;
+            }
+        }
     }
 
     void ControlPatrol()

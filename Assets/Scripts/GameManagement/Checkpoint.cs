@@ -16,7 +16,8 @@ public class Checkpoint : MonoBehaviour {
 	{
 		if (other.CompareTag("Player"))
 		{
-			gm._lastCheckPointPos = transform.position;
+			PlayerPrefs.SetFloat("PosX", transform.position.x);
+			PlayerPrefs.SetFloat("PosY", transform.position.y);
 			gm.destroyThem = isDestroy;  
 			gm.isFirst = isFirst;
 			Destroy(gameObject);

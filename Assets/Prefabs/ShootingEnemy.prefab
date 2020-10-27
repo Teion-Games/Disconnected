@@ -186,5 +186,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bullet: {fileID: 8667858758929937616, guid: fe3f067f1e7917f42b20266068102d2b, type: 3}
+  isSmart: 1
   bulletSpeed: 10
   bulletCD: 2
