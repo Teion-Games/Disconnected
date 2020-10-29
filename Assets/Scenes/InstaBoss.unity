@@ -335,12 +335,12 @@ PrefabInstance:
     - target: {fileID: 4579172652149216928, guid: 56c7179fc87801e498e5c02da157719c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.14
+      value: -0.77
       objectReference: {fileID: 0}
     - target: {fileID: 4579172652149216928, guid: 56c7179fc87801e498e5c02da157719c,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.26
+      value: 1.98
       objectReference: {fileID: 0}
     - target: {fileID: 4579172652149216928, guid: 56c7179fc87801e498e5c02da157719c,
         type: 3}
@@ -528,17 +528,25 @@ MonoBehaviour:
   - {fileID: 2123477881}
   - {fileID: 452451025}
   - {fileID: 225494421}
-  blindDur: 0.5
-  blindCD: 5
-  overHideDur: 1.5
-  overHideCD: 3
-  healthTotal: 10
+  positionsToTeleport:
+  - {x: -0.77, y: 1.98, z: 0}
+  - {x: -17.45, y: 1.98, z: 0}
+  - {x: -17.45, y: 11.63, z: 0}
+  - {x: -0.77, y: 11.63, z: 0}
+  - {x: 13.9, y: 11.63, z: 0}
+  - {x: 13.9, y: 1.98, z: 0}
+  blindScreenDuration: 0.75
+  blindScreenCD: 5
+  overflowHideDuration: 5
+  overflowHideCD: 10
+  healthTotal: 50
   healthFill: {fileID: 710379965}
   blindScreen: {fileID: 1689576180}
-  overBlind: {fileID: 872936063}
-  changeCDFirst: 1
-  changeCDSecond: 5
-  changeCDThird: 3
+  overflowBlind: {fileID: 872936063}
+  teleportCD: 3
+  changeCDFirst: 5
+  changeCDSecond: 3
+  changeCDThird: 2
 --- !u!1001 &297457102
 PrefabInstance:
   m_ObjectHideFlags: 0

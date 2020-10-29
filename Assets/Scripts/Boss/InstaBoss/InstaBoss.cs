@@ -8,21 +8,23 @@ public class InstaBoss : MonoBehaviour
 {
     [Tooltip("Crie um game object e dentro dele coloque tudo que está dentro de uma fase, adcione esse GO aqui, repita para todas as fases")]
     [SerializeField] GameObject[] phasesOption;
+    [SerializeField] Vector3[] positionsToTeleport;
     [Tooltip("Duração do flash com fotos escondendo a tela")]
-    [SerializeField] float blindDur;
+    [SerializeField] float blindScreenDuration;
     [Tooltip("tempo entre as ativações do flash com fotos escondendo a tela")]
-    [SerializeField] float blindCD;
+    [SerializeField] float blindScreenCD;
     [Tooltip("duração de esconder a barra de overflow")]
-    [SerializeField] float overHideDur;
+    [SerializeField] float overflowHideDuration;
     [Tooltip("tempo entre as ativações de esconder a barra de overflow")]
-    [SerializeField] float overHideCD;
+    [SerializeField] float overflowHideCD;
     [SerializeField] float healthTotal;
     [Tooltip("HUD>BossHP>Border>hpFill")]
     [SerializeField] Image healthFill;
     [Tooltip("HUD>BLindu")]
     [SerializeField] GameObject blindScreen;
     [Tooltip("HUD>OverflowBreak")]
-    [SerializeField] GameObject overBlind;
+    [SerializeField] GameObject overflowBlind;
+    [SerializeField] float teleportCD;
     float health;
     [SerializeField] float changeCDFirst, changeCDSecond, changeCDThird;
     int curPhase;
@@ -40,8 +42,9 @@ public class InstaBoss : MonoBehaviour
         isSecondPhase = false;
         isThirdPhase = false;
         ChangePhaseCorr = StartCoroutine(ChangePhase(changeCDFirst));
-        StartCoroutine(BlindScreen(blindCD, blindDur));
-        StartCoroutine(BlindOverFlow(overHideCD, overHideDur));
+        StartCoroutine(BlindScreen(blindScreenCD, blindScreenDuration));
+        StartCoroutine(BlindOverFlow(overflowHideCD, overflowHideDuration));
+        StartCoroutine(TeleportBehav(teleportCD));
     }
 
     void OnTriggerEnter2D(Collider2D col)
@@ -95,25 +98,44 @@ public class InstaBoss : MonoBehaviour
         }
     }
 
-    private IEnumerator BlindScreen(float blindCD, float blindDur)
+    private IEnumerator BlindScreen(float blindScreenCD, float blindScreenDuration)
     {
         while (true)
         {
-            yield return new WaitForSeconds(blindCD);
+            yield return new WaitForSeconds(blindScreenCD);
             blindScreen.SetActive(true);
-            yield return new WaitForSeconds(blindDur);
+            yield return new WaitForSeconds(blindScreenDuration);
             blindScreen.SetActive(false);
         }
     }
 
-    private IEnumerator BlindOverFlow(float overHideCD, float overHideDur)
+    private IEnumerator BlindOverFlow(float overflowHideCD, float overflowHideDuration)
     {
         while (true)
         {
-            yield return new WaitForSeconds(overHideCD);
-            overBlind.SetActive(true);
-            yield return new WaitForSeconds(overHideDur);
-            overBlind.SetActive(false);
+            yield return new WaitForSeconds(overflowHideCD);
+            overflowBlind.SetActive(true);
+            yield return new WaitForSeconds(overflowHideDuration);
+            overflowBlind.SetActive(false);
+        }
+    }
+
+     private IEnumerator TeleportBehav(float teleportTime)
+    {
+        while (true)
+        {
+            // anim.SetTrigger("teleport");
+            // yield return new WaitForSeconds(0.2f);
+            for(;;)
+            {
+                int i = Random.Range(0, positionsToTeleport.Length);
+                if (transform.position != positionsToTeleport[i])
+                {
+                    transform.position = positionsToTeleport[i];
+                    break;
+                }
+            }
+            yield return new WaitForSeconds(teleportTime);
         }
     }
 
