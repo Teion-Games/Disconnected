@@ -21,8 +21,8 @@ public class Player : MonoBehaviour
         _currentController = 1;
         gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameMaster>();
         //duas linhas para xitar o checkpoint system enquanto teste
-        PlayerPrefs.SetFloat("PosX", -17f);
-        PlayerPrefs.SetFloat("PosY", 3f);
+        PlayerPrefs.SetFloat("PosX", -17.5f);
+        PlayerPrefs.SetFloat("PosY", 2.9f);
         transform.position = new Vector3(PlayerPrefs.GetFloat("PosX"), PlayerPrefs.GetFloat("PosY"), 0f);
     }
 
