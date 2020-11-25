@@ -26,7 +26,7 @@ public class InstaBoss : MonoBehaviour
     [SerializeField] GameObject overflowBlind;
     [SerializeField] float teleportCD;
     float health;
-    [SerializeField] float changeCDFirst, changeCDSecond, changeCDThird;
+    [SerializeField] float changeCD, changeCDSecond, changeCDThird;
     int curPhase;
     bool isSecondPhase, isThirdPhase;
     bool started = false;
@@ -41,10 +41,10 @@ public class InstaBoss : MonoBehaviour
         curPhase = -1;
         isSecondPhase = false;
         isThirdPhase = false;
-        ChangePhaseCorr = StartCoroutine(ChangePhase(changeCDFirst));
-        StartCoroutine(BlindScreen(blindScreenCD, blindScreenDuration));
-        StartCoroutine(BlindOverFlow(overflowHideCD, overflowHideDuration));
-        StartCoroutine(TeleportBehav(teleportCD));
+        StartCoroutine(ChangePhase());
+        StartCoroutine(BlindScreen(blindScreenDuration));
+        StartCoroutine(BlindOverFlow(overflowHideDuration));
+        StartCoroutine(TeleportBehav());
     }
 
     void OnTriggerEnter2D(Collider2D col)
@@ -63,13 +63,11 @@ public class InstaBoss : MonoBehaviour
         if(healthFill.fillAmount<=0.66f && !isSecondPhase)
         {
             isSecondPhase = true;
-            StopCoroutine(ChangePhaseCorr);
-            ChangePhaseCorr = StartCoroutine(ChangePhase(changeCDSecond));
+            changeCD =  changeCDSecond;
         }else if(healthFill.fillAmount<=0.33f && !isThirdPhase)
         {
             isThirdPhase = true;
-            StopCoroutine(ChangePhaseCorr);
-            StartCoroutine(ChangePhase(changeCDThird));
+            changeCD =  changeCDThird;
         }
         if(healthFill.fillAmount<=0)
         {
@@ -77,11 +75,11 @@ public class InstaBoss : MonoBehaviour
         }
     }
 
-    private IEnumerator ChangePhase(float changeCD)
+    private IEnumerator ChangePhase()
     {
         while(true)
         {
-
+            yield return new WaitForSeconds(changeCD);
             int newPhase = Randomize(curPhase);
             if(curPhase != -1) phasesOption[curPhase].SetActive(false);
             foreach (GameObject enemy in GameObject.FindGameObjectsWithTag("Enemy"))
@@ -94,11 +92,10 @@ public class InstaBoss : MonoBehaviour
             phasesOption[newPhase].SetActive(true);
             curPhase = newPhase;
             playerTrans.position = new Vector3(PlayerPrefs.GetFloat("PosX"), PlayerPrefs.GetFloat("PosY"), 0f);
-            yield return new WaitForSeconds(changeCD);
         }
     }
 
-    private IEnumerator BlindScreen(float blindScreenCD, float blindScreenDuration)
+    private IEnumerator BlindScreen(float blindScreenDuration)
     {
         while (true)
         {
@@ -109,7 +106,7 @@ public class InstaBoss : MonoBehaviour
         }
     }
 
-    private IEnumerator BlindOverFlow(float overflowHideCD, float overflowHideDuration)
+    private IEnumerator BlindOverFlow(float overflowHideDuration)
     {
         while (true)
         {
@@ -120,12 +117,13 @@ public class InstaBoss : MonoBehaviour
         }
     }
 
-     private IEnumerator TeleportBehav(float teleportTime)
+     private IEnumerator TeleportBehav()
     {
         while (true)
         {
             // anim.SetTrigger("teleport");
             // yield return new WaitForSeconds(0.2f);
+            yield return new WaitForSeconds(teleportCD);
             for(;;)
             {
                 int i = Random.Range(0, positionsToTeleport.Length);
@@ -135,7 +133,6 @@ public class InstaBoss : MonoBehaviour
                     break;
                 }
             }
-            yield return new WaitForSeconds(teleportTime);
         }
     }
 

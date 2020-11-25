@@ -544,7 +544,7 @@ MonoBehaviour:
   blindScreen: {fileID: 1689576180}
   overflowBlind: {fileID: 872936063}
   teleportCD: 3
-  changeCDFirst: 5
+  changeCD: 5
   changeCDSecond: 3
   changeCDThird: 2
 --- !u!1001 &297457102

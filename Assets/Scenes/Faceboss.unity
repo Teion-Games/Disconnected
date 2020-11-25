@@ -4203,7 +4203,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b08fbe3775162834eb54bcb2fe22e4a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scrollVel: 10
+  scrollVel: 5
 --- !u!1 &3679126425384674088
 GameObject:
   m_ObjectHideFlags: 0
@@ -4483,6 +4483,7 @@ MonoBehaviour:
   healthFill: {fileID: 710379965}
   randomizeActionTimer: 5
   _scrollPhaseDuration: 4
+  invencivelDuration: 3
 --- !u!61 &4579172652361486394
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4823,7 +4824,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3679126425349950948}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.699999, y: 18.69, z: -1.2431641}
+  m_LocalPosition: {x: 9.699999, y: 18.4, z: -1.2431641}
   m_LocalScale: {x: 1.7, y: 1.7, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
