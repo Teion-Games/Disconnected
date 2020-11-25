@@ -15,8 +15,8 @@ MonoBehaviour:
   active: 1
   m_AdvancedMode: 0
   intensity:
-    m_OverrideState: 0
-    m_Value: 0
+    m_OverrideState: 1
+    m_Value: 0.063
     min: 0
     max: 1
 --- !u!114 &11400000
@@ -33,6 +33,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   components:
   - {fileID: 5232796131448996502}
+  - {fileID: -8720657530303247996}
 --- !u!114 &5232796131448996502
 MonoBehaviour:
   m_ObjectHideFlags: 3
