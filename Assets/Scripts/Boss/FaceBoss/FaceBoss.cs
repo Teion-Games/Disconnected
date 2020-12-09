@@ -12,6 +12,7 @@ public class FaceBoss : MonoBehaviour
     [SerializeField] float randomizeActionTimer;
     [SerializeField] float _scrollPhaseDuration;
     [SerializeField] float invencivelDuration;
+    [SerializeField] GameObject homingMissilePrefab;
     public float scrollPhaseDuration {get {return _scrollPhaseDuration;}}
     float health;
     float saveinvencivelDuration;
@@ -65,7 +66,9 @@ public class FaceBoss : MonoBehaviour
                 case 2:
                     canTakeDmg = false;
                     break;
-
+                case 3:
+                    HomingMissileSpawn();
+                    break;
            }
         }
     }
@@ -81,6 +84,11 @@ public class FaceBoss : MonoBehaviour
         {
             invencivelDuration -= Time.deltaTime;    
         }
+    }
+
+    void HomingMissileSpawn()
+    {
+        Instantiate(homingMissilePrefab, transform.position, Quaternion.identity);
     }
 
     void EndGame()

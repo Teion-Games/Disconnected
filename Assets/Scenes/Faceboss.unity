@@ -4484,6 +4484,8 @@ MonoBehaviour:
   randomizeActionTimer: 5
   _scrollPhaseDuration: 4
   invencivelDuration: 3
+  homingMissilePrefab: {fileID: 3211260842351755546, guid: 0fb0016c6fb58cc45b4820ca0a173554,
+    type: 3}
 --- !u!61 &4579172652361486394
 BoxCollider2D:
   m_ObjectHideFlags: 0
