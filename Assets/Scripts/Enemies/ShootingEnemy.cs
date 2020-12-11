@@ -4,40 +4,40 @@ using UnityEngine;
 
 public class ShootingEnemy : MonoBehaviour
 {
-    [SerializeField] GameObject bullet;
-    [SerializeField] bool isSmart;
-    [SerializeField] float bulletSpeed, bulletCD;
+    [SerializeField] GameObject bulletPrefab;
+    [SerializeField] bool aimAtPlayer;
+    [SerializeField] float bulletSpeed, timeBetweenShots;
+    public float _timeBetweenShots {set {timeBetweenShots = value;} }
     GameObject playerGO;
-    float saveBulletCD;
     Transform gunPoint;
+
     void Start()
     {
         playerGO = FindObjectOfType<Player>().gameObject;
         gunPoint = GameObject.Find(this.name+"/gunPoint").transform;
-        saveBulletCD = bulletCD;
-        StartCoroutine(ShootingBehav(bulletCD));
+        StartCoroutine(ShootingBehav());
     }
 
-    private IEnumerator ShootingBehav(float shotTime)
+    private IEnumerator ShootingBehav()
     {
         while (true)
         {
-            if(isSmart)
+            if(aimAtPlayer)
             {
                 gunPoint.LookAt(new Vector3(playerGO.transform.position.x, playerGO.transform.position.y+2f, playerGO.transform.position.z));
                 // GameObject particle = Instantiate(shotParticle, gunPoint.position, Quaternion.identity);
                 // particle.GetComponent<ParticleSystem>().Play();
-                GameObject bulleto = Instantiate(bullet, gunPoint.position, Quaternion.identity);
-                bulleto.GetComponent<Rigidbody2D>().velocity = gunPoint.forward * bulletSpeed;
+                GameObject bullet = Instantiate(bulletPrefab, gunPoint.position, Quaternion.identity);
+                bullet.GetComponent<Rigidbody2D>().velocity = gunPoint.forward * bulletSpeed;
             }
             else
             {
                 // GameObject particle = Instantiate(shotParticle, gunPoint.position, Quaternion.identity);
                 // particle.GetComponent<ParticleSystem>().Play();
-                GameObject bulleto = Instantiate(bullet, gunPoint.position, Quaternion.identity);
-                bulleto.GetComponent<Rigidbody2D>().velocity = gunPoint.up * bulletSpeed;
+                GameObject bullet = Instantiate(bulletPrefab, gunPoint.position, Quaternion.identity);
+                bullet.GetComponent<Rigidbody2D>().velocity = gunPoint.up * bulletSpeed;
             }
-            yield return new WaitForSeconds(shotTime);
+            yield return new WaitForSeconds(timeBetweenShots);
         }
     }
 }

@@ -120,6 +120,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   rotationSpeed: 200
+  missileDurationBeforeDestroy: 2
 --- !u!58 &2058308979
 CircleCollider2D:
   m_ObjectHideFlags: 0

@@ -9,6 +9,7 @@ public class HomingMissile : MonoBehaviour
     [SerializeField] float speed = 5f;
     [SerializeField] float rotationSpeed = 200f;
     [SerializeField] float missileDurationBeforeDestroy = 2f; 
+    Vector2 direction;
     void Start()
     {
         target = GameObject.Find("Player").transform;
@@ -19,20 +20,19 @@ public class HomingMissile : MonoBehaviour
 
     void FixedUpdate()
     {
-        CalculateDirectionThenFollowTarget();  
+        CalculateDirection();
+        FollowTarget();
     }
 
-    void CalculateDirectionThenFollowTarget()
+    void CalculateDirection()
     {
-        Vector2 direction = new Vector2(target.position.x, target.position.y+3) - rb.position;
+        direction = new Vector2(target.position.x, target.position.y+3) - rb.position;
         direction.Normalize();
-
-        FollowTarget(direction);
     }
 
-    void FollowTarget(Vector2 dir)
+    void FollowTarget()
     {
-        float rotationAmount = Vector3.Cross(dir, transform.up).z;
+        float rotationAmount = Vector3.Cross(direction, transform.up).z;
 
         rb.angularVelocity = -rotationAmount * rotationSpeed;
         rb.velocity = transform.up * speed;
