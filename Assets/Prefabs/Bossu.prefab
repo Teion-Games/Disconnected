@@ -12,8 +12,12 @@ GameObject:
   - component: {fileID: 4579172652149216929}
   - component: {fileID: 4579172652149216934}
   - component: {fileID: 4579172652149216935}
-  - component: {fileID: 4579172652149216932}
   - component: {fileID: 8966460672422930986}
+  - component: {fileID: 230229664}
+  - component: {fileID: 230229665}
+  - component: {fileID: 230229666}
+  - component: {fileID: 230229667}
+  - component: {fileID: 230229663}
   m_Layer: 0
   m_Name: Bossu
   m_TagString: Enemy
@@ -134,37 +138,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.5143929, y: 3.7700005}
   m_EdgeRadius: 0
---- !u!114 &4579172652149216932
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4579172652149216933}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 943d14c5047b4d94781a533c89224803, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  positionsToTeleport:
-  - {x: 13.24, y: 1.35, z: 0}
-  - {x: -11.8, y: 1.35, z: 0}
-  - {x: 0.3, y: 1.35, z: 0}
-  blindCD: 5
-  blindDuration: 0.5
-  shootTime: 5
-  shootTimeSecondPhase: 3
-  shootTimeThirdPhase: 2
-  teleportTime: 4
-  teleportTimeSecondPhase: 2
-  teleportTimeThirdPhase: 1
-  healthTotal: 20
-  healthFill: {fileID: 0}
-  bullet: {fileID: 8667858758929937616, guid: fe3f067f1e7917f42b20266068102d2b, type: 3}
-  bulletSpeed: 40
-  blindScreen: {fileID: 0}
-  shotParticle: {fileID: 4999379543475546834, guid: 6f11c38d46197994a89b02980cf7d427,
-    type: 3}
 --- !u!95 &8966460672422930986
 Animator:
   serializedVersion: 3
@@ -184,6 +157,87 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &230229664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4579172652149216933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c4df0bb568ac004eb0698a4f798dbb2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blindScreenDuration: 1
+  blindScreenCD: 5
+  blindScreen: {fileID: 0}
+--- !u!114 &230229665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4579172652149216933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c4cb4f8bd2751e40bb092fc2f307e67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  overflowHideDuration: 3
+  overflowHideCD: 5
+  overflowBlind: {fileID: 0}
+--- !u!114 &230229666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4579172652149216933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cadb366f0c0f9d64787a843073d9bd6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  positionsToTeleport:
+  - {x: 13.24, y: 1.35, z: 0}
+  - {x: 0.4, y: 1.35, z: 0}
+  - {x: -13.8, y: 1.35, z: 0}
+  teleportCD: 5
+--- !u!114 &230229667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4579172652149216933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b360e7aeb6e30b740bf3c64711560853, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  phasesOption:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  changeCD: 6
+  changeCDSecond: 3
+  changeCDThird: 1
+--- !u!114 &230229663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4579172652149216933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 851e3882e18246f41b3dd0aea4d1390b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthTotal: 10
+  healthFill: {fileID: 0}
 --- !u!1 &4579172653969063213
 GameObject:
   m_ObjectHideFlags: 0
